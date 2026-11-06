@@ -39,7 +39,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# temp & agent tooling
+# temp assets
 .tmp-assets/
-.agents/
 .codex/
