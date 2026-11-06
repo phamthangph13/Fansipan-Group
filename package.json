@@ -1,0 +1,37 @@
+{
+  "name": "fansipan-group",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "catalogue": "node scripts/generate-catalogue.mjs"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.552.0",
+    "next": "16.4.5",
+    "nodemailer": "^7.0.10",
+    "pdfjs-dist": "^5.4.624",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-pageflip": "^2.0.3",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@pdf-lib/fontkit": "^1.1.1",
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^24.10.0",
+    "@types/nodemailer": "^7.0.3",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "pdf-lib": "^1.17.1",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.3.5",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

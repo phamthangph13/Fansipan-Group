@@ -1,0 +1,614 @@
+[
+  {
+    "id": "hvac",
+    "slug": "he-thong-dieu-hoa-lam-lanh",
+    "code": "01",
+    "title": {
+      "vi": "Hệ thống điều hòa – làm lạnh",
+      "en": "HVAC & refrigeration systems"
+    },
+    "shortTitle": {
+      "vi": "Điều hòa – làm lạnh",
+      "en": "HVAC & refrigeration"
+    },
+    "tagline": {
+      "vi": "Điều hòa không khí & làm lạnh (HVAC)",
+      "en": "Heating, ventilation, air conditioning & refrigeration"
+    },
+    "short": {
+      "vi": "Giải pháp điều hòa, thông gió và làm lạnh cho nhà máy, tòa nhà và công trình công nghiệp — từ tư vấn, thiết kế đến thi công và bảo trì.",
+      "en": "Air conditioning, ventilation and refrigeration solutions for factories, buildings and industrial facilities — from consultancy and design to installation and maintenance."
+    },
+    "intro": {
+      "vi": "Fansipan Group cung cấp giải pháp điều hòa không khí và làm lạnh cho công trình dân dụng, thương mại và công nghiệp. Từ tư vấn, thiết kế đến lắp đặt, chạy thử và bảo trì, giải pháp được xây dựng theo nhu cầu sử dụng, yêu cầu kỹ thuật và điều kiện vận hành của từng công trình.",
+      "en": "Fansipan Group delivers air conditioning and refrigeration solutions for residential, commercial and industrial projects. From consultancy and design to installation, commissioning and maintenance, every solution is built around the usage needs, technical requirements and operating conditions of the specific project."
+    },
+    "role": [
+      {
+        "vi": "Tạo môi trường làm việc tiện nghi: duy trì nhiệt độ phù hợp tại văn phòng, khu thương mại và các không gian sử dụng chung.",
+        "en": "Comfortable working environments: maintaining the right temperature in offices, commercial areas and shared spaces."
+      },
+      {
+        "vi": "Đáp ứng yêu cầu sản xuất: cung cấp nước lạnh hoặc nguồn lạnh phục vụ dây chuyền, máy móc và các công đoạn cần kiểm soát nhiệt độ.",
+        "en": "Production requirements: supplying chilled water or cooling capacity for production lines, machinery and temperature-sensitive processes."
+      },
+      {
+        "vi": "Hỗ trợ bảo quản sản phẩm: duy trì điều kiện nhiệt độ theo yêu cầu của hàng hóa, nguyên liệu và thành phẩm.",
+        "en": "Product preservation: maintaining the temperature conditions required for goods, raw materials and finished products."
+      },
+      {
+        "vi": "Nâng cao hiệu quả vận hành: lựa chọn công suất và phương án điều khiển phù hợp để hạn chế tiêu thụ năng lượng không cần thiết, thuận tiện cho bảo trì và quản lý hệ thống.",
+        "en": "Operational efficiency: selecting suitable capacity and control strategies to avoid unnecessary energy use and keep the system easy to maintain and manage."
+      }
+    ],
+    "scope": [
+      {
+        "title": {
+          "vi": "Tư vấn và thiết kế",
+          "en": "Consultancy & design"
+        },
+        "items": [
+          {
+            "vi": "Khảo sát hiện trạng, xác định nhu cầu sử dụng và yêu cầu nhiệt độ của từng khu vực.",
+            "en": "Survey existing conditions and define the usage needs and temperature requirements of each area."
+          },
+          {
+            "vi": "Tính toán tải lạnh, lựa chọn công suất và đề xuất phương án hệ thống.",
+            "en": "Calculate cooling loads, select capacities and propose the system configuration."
+          },
+          {
+            "vi": "Thiết kế bố trí thiết bị, đường ống, ống gió, cách nhiệt và hệ thống điều khiển.",
+            "en": "Design equipment layouts, piping, ductwork, insulation and control systems."
+          },
+          {
+            "vi": "Phối hợp với các bộ môn kiến trúc, kết cấu và cơ điện để bảo đảm khả năng thi công, vận hành và bảo trì.",
+            "en": "Coordinate with architecture, structure and other M&E disciplines to ensure buildability, operation and maintainability."
+          }
+        ]
+      },
+      {
+        "title": {
+          "vi": "Cung cấp và thi công lắp đặt",
+          "en": "Supply & installation"
+        },
+        "items": [
+          {
+            "vi": "Hệ thống điều hòa cục bộ, multi và điều hòa trung tâm VRV/VRF.",
+            "en": "Local, multi-split and central VRV/VRF air conditioning systems."
+          },
+          {
+            "vi": "Hệ thống Chiller, AHU, FCU và các thiết bị phụ trợ.",
+            "en": "Chiller, AHU, FCU systems and associated auxiliary equipment."
+          },
+          {
+            "vi": "Hệ thống nước lạnh phục vụ điều hòa không khí hoặc làm mát quá trình sản xuất.",
+            "en": "Chilled water systems for air conditioning or production cooling."
+          },
+          {
+            "vi": "Tháp giải nhiệt, bơm tuần hoàn và đường ống nước giải nhiệt đối với hệ thống sử dụng phương án giải nhiệt nước.",
+            "en": "Cooling towers, circulation pumps and condenser water piping for water-cooled systems."
+          },
+          {
+            "vi": "Đường ống môi chất lạnh, đường ống nước, thoát nước ngưng, ống gió và lớp cách nhiệt.",
+            "en": "Refrigerant piping, water piping, condensate drainage, ductwork and insulation."
+          },
+          {
+            "vi": "Tủ điện, thiết bị điều khiển và kết nối giám sát theo phạm vi dự án.",
+            "en": "Electrical panels, control devices and monitoring connections within the project scope."
+          }
+        ]
+      },
+      {
+        "title": {
+          "vi": "Kiểm tra, chạy thử và bảo trì",
+          "en": "Testing, commissioning & maintenance"
+        },
+        "items": [
+          {
+            "vi": "Kiểm tra chất lượng lắp đặt, độ kín đường ống và tình trạng cách nhiệt.",
+            "en": "Inspect installation quality, pipe tightness and insulation condition."
+          },
+          {
+            "vi": "Thực hiện thử áp, vệ sinh hoặc súc rửa, hút chân không và nạp môi chất theo loại hệ thống.",
+            "en": "Perform pressure testing, cleaning or flushing, vacuuming and refrigerant charging according to the system type."
+          },
+          {
+            "vi": "Chạy thử, cân chỉnh và đánh giá thông số vận hành.",
+            "en": "Commission, tune and evaluate operating parameters."
+          },
+          {
+            "vi": "Bàn giao hồ sơ, hướng dẫn sử dụng và bảo trì định kỳ.",
+            "en": "Hand over documentation and provide operating and scheduled maintenance guidance."
+          },
+          {
+            "vi": "Kiểm tra, xử lý sự cố và đề xuất cải tạo hệ thống hiện hữu.",
+            "en": "Inspect, troubleshoot and propose upgrades for existing systems."
+          }
+        ]
+      }
+    ],
+    "audiences": [
+      {
+        "vi": "Nhà máy, nhà xưởng: điều hòa khu vực làm việc và cung cấp nguồn lạnh phục vụ thiết bị, dây chuyền sản xuất.",
+        "en": "Factories and workshops: comfort cooling for work areas and cooling capacity for equipment and production lines."
+      },
+      {
+        "vi": "Tòa nhà văn phòng, trung tâm thương mại: điều hòa nhiều khu vực với nhu cầu sử dụng và thời gian vận hành khác nhau.",
+        "en": "Office buildings and shopping centres: multi-zone air conditioning with different usage needs and operating schedules."
+      },
+      {
+        "vi": "Khách sạn, nhà hàng, khu dịch vụ: đáp ứng yêu cầu tiện nghi, kiểm soát theo từng không gian và thuận tiện trong vận hành.",
+        "en": "Hotels, restaurants and service areas: comfort, zone-by-zone control and convenient operation."
+      },
+      {
+        "vi": "Kho và khu vực bảo quản: duy trì nhiệt độ theo yêu cầu của sản phẩm và điều kiện lưu trữ.",
+        "en": "Warehouses and storage areas: maintain product-specific temperatures and storage conditions."
+      },
+      {
+        "vi": "Phòng kỹ thuật, phòng máy chủ: làm mát thiết bị theo tải nhiệt và yêu cầu về tính liên tục.",
+        "en": "Technical rooms and server rooms: equipment cooling based on heat load and continuity requirements."
+      },
+      {
+        "vi": "Công trình cải tạo, mở rộng: thay thế thiết bị, bổ sung công suất hoặc nâng cấp hệ thống để đáp ứng nhu cầu mới.",
+        "en": "Retrofit and expansion projects: replace equipment, add capacity or upgrade systems to meet new demands."
+      }
+    ],
+    "note": {
+      "vi": "Phạm vi công việc cụ thể được xác định theo hồ sơ thiết kế, yêu cầu kỹ thuật và thỏa thuận của từng dự án.",
+      "en": "The specific scope of work is defined by the design documents, technical requirements and agreement of each project."
+    }
+  },
+  {
+    "id": "me",
+    "slug": "he-thong-co-dien-me",
+    "code": "02",
+    "title": {
+      "vi": "Hệ thống cơ điện (M&E)",
+      "en": "Mechanical & electrical systems (M&E)"
+    },
+    "shortTitle": {
+      "vi": "Cơ điện (M&E)",
+      "en": "M&E systems"
+    },
+    "tagline": {
+      "vi": "Hạ tầng kỹ thuật cho công trình vận hành ổn định",
+      "en": "Technical infrastructure for reliable operations"
+    },
+    "short": {
+      "vi": "Tư vấn, thiết kế, thi công, chạy thử và bảo trì hệ thống cơ điện — điện, nước, khí nén, điều hòa và điều khiển.",
+      "en": "Consultancy, design, installation, commissioning and maintenance of M&E systems — power, water, compressed air, HVAC and controls."
+    },
+    "intro": {
+      "vi": "Hệ thống cơ điện (M&E) là hạ tầng kỹ thuật giúp công trình vận hành an toàn, ổn định và hiệu quả. Fansipan Group cung cấp dịch vụ tư vấn, thiết kế, thi công, chạy thử và bảo trì hệ thống cơ điện, với giải pháp phù hợp với công năng, yêu cầu kỹ thuật và điều kiện thực tế của từng dự án.",
+      "en": "Mechanical and electrical (M&E) systems are the technical infrastructure that keeps a facility safe, stable and efficient. Fansipan Group provides consultancy, design, installation, commissioning and maintenance of M&E systems, tailored to the function, technical requirements and site conditions of each project."
+    },
+    "role": [
+      {
+        "vi": "Cung cấp hạ tầng vận hành: đáp ứng nhu cầu về điện, điều hòa, thông gió, cấp thoát nước và các tiện ích kỹ thuật phục vụ hoạt động của công trình.",
+        "en": "Operating infrastructure: meeting power, air conditioning, ventilation, water supply and drainage, and other technical utility needs."
+      },
+      {
+        "vi": "Hỗ trợ hoạt động sản xuất: cung cấp nguồn điện, khí nén, nước và các hệ thống phụ trợ theo yêu cầu của máy móc, dây chuyền.",
+        "en": "Production support: supplying power, compressed air, water and auxiliary systems for machinery and production lines."
+      },
+      {
+        "vi": "Bảo đảm an toàn và độ tin cậy: bố trí thiết bị bảo vệ, tiếp địa và giải pháp kiểm soát phù hợp, hạn chế sự cố và gián đoạn vận hành.",
+        "en": "Safety and reliability: protective devices, earthing and suitable controls to reduce incidents and operational downtime."
+      },
+      {
+        "vi": "Sử dụng năng lượng hiệu quả: lựa chọn thiết bị, phân phối tải và tổ chức điều khiển theo nhu cầu sử dụng thực tế.",
+        "en": "Energy efficiency: equipment selection, load distribution and control strategies matched to actual demand."
+      },
+      {
+        "vi": "Thuận tiện cho quản lý và bảo trì: bố trí hệ thống dễ tiếp cận, kiểm tra và sửa chữa; xem xét khả năng mở rộng ngay từ giai đoạn thiết kế.",
+        "en": "Manageability and maintainability: systems laid out for easy access, inspection and repair, with expansion considered from the design stage."
+      }
+    ],
+    "scope": [
+      {
+        "title": {
+          "vi": "Hệ thống điện",
+          "en": "Electrical systems"
+        },
+        "items": [
+          {
+            "vi": "Hệ thống phân phối điện, tủ điện tổng và tủ điện phân phối.",
+            "en": "Power distribution systems, main switchboards and distribution boards."
+          },
+          {
+            "vi": "Cáp điện, thang máng cáp, ống luồn dây và các tuyến cấp nguồn.",
+            "en": "Power cables, cable trays, conduits and supply routes."
+          },
+          {
+            "vi": "Chiếu sáng trong nhà, ngoài trời và chiếu sáng sự cố.",
+            "en": "Indoor, outdoor and emergency lighting."
+          },
+          {
+            "vi": "Hệ thống tiếp địa, chống sét và các thiết bị bảo vệ.",
+            "en": "Earthing, lightning protection and protective devices."
+          },
+          {
+            "vi": "Cấp điện cho máy móc, thiết bị và dây chuyền sản xuất.",
+            "en": "Power supply for machinery, equipment and production lines."
+          }
+        ]
+      },
+      {
+        "title": {
+          "vi": "Hệ thống cơ và tiện ích kỹ thuật",
+          "en": "Mechanical systems & technical utilities"
+        },
+        "items": [
+          {
+            "vi": "Điều hòa không khí, thông gió và hút khí thải theo yêu cầu công trình.",
+            "en": "Air conditioning, ventilation and exhaust systems to project requirements."
+          },
+          {
+            "vi": "Hệ thống Chiller, nước lạnh và nước giải nhiệt.",
+            "en": "Chiller, chilled water and condenser water systems."
+          },
+          {
+            "vi": "Cấp thoát nước, đường ống và thiết bị liên quan.",
+            "en": "Water supply and drainage, piping and related equipment."
+          },
+          {
+            "vi": "Hệ thống khí nén và đường ống tiện ích phục vụ sản xuất.",
+            "en": "Compressed air systems and utility piping for production."
+          },
+          {
+            "vi": "Giá đỡ, kết cấu phụ trợ và cách nhiệt cho hệ thống kỹ thuật.",
+            "en": "Supports, secondary structures and insulation for technical systems."
+          }
+        ]
+      },
+      {
+        "title": {
+          "vi": "Điều khiển và giám sát",
+          "en": "Controls & monitoring"
+        },
+        "items": [
+          {
+            "vi": "Tủ điều khiển, cảm biến và thiết bị đo lường.",
+            "en": "Control panels, sensors and measuring devices."
+          },
+          {
+            "vi": "Điều khiển thiết bị độc lập hoặc phối hợp giữa các hệ thống.",
+            "en": "Standalone equipment control or coordinated control across systems."
+          },
+          {
+            "vi": "Kết nối giám sát tập trung theo yêu cầu và phạm vi dự án.",
+            "en": "Central monitoring connections as required and within the project scope."
+          }
+        ]
+      },
+      {
+        "title": {
+          "vi": "Dịch vụ kỹ thuật",
+          "en": "Engineering services"
+        },
+        "items": [
+          {
+            "vi": "Khảo sát, tư vấn giải pháp và lập hồ sơ thiết kế.",
+            "en": "Survey, solution consultancy and design documentation."
+          },
+          {
+            "vi": "Cung cấp vật tư, thiết bị và thi công lắp đặt.",
+            "en": "Supply of materials and equipment, and installation."
+          },
+          {
+            "vi": "Kiểm tra, chạy thử, cân chỉnh và nghiệm thu.",
+            "en": "Testing, commissioning, tuning and acceptance."
+          },
+          {
+            "vi": "Bàn giao hồ sơ hoàn công, hướng dẫn vận hành.",
+            "en": "Handover of as-built documentation and operating guidance."
+          },
+          {
+            "vi": "Bảo trì, xử lý sự cố và cải tạo hệ thống hiện hữu.",
+            "en": "Maintenance, troubleshooting and retrofit of existing systems."
+          }
+        ]
+      }
+    ],
+    "audiences": [
+      {
+        "vi": "Nhà máy, nhà xưởng công nghiệp: hạ tầng cơ điện phục vụ sản xuất, máy móc và các khu vực phụ trợ.",
+        "en": "Factories and industrial workshops: M&E infrastructure for production, machinery and support areas."
+      },
+      {
+        "vi": "Tòa nhà văn phòng, trung tâm thương mại: hệ thống kỹ thuật phục vụ nhiều khu vực, nhiều nhóm người sử dụng.",
+        "en": "Office buildings and shopping centres: technical systems serving multiple zones and user groups."
+      },
+      {
+        "vi": "Khách sạn, nhà hàng và công trình dịch vụ: đáp ứng nhu cầu tiện nghi, an toàn và vận hành liên tục.",
+        "en": "Hotels, restaurants and service facilities: comfort, safety and continuous operation."
+      },
+      {
+        "vi": "Kho hàng, trung tâm logistics: cấp điện, chiếu sáng, thông gió và các tiện ích theo điều kiện bảo quản, khai thác.",
+        "en": "Warehouses and logistics centres: power, lighting, ventilation and utilities suited to storage and operations."
+      },
+      {
+        "vi": "Phòng kỹ thuật và khu vực chuyên dụng: hạ tầng phù hợp với tải thiết bị và yêu cầu kiểm soát môi trường.",
+        "en": "Technical rooms and specialist areas: infrastructure matched to equipment loads and environmental control requirements."
+      },
+      {
+        "vi": "Công trình cải tạo, mở rộng: nâng cấp hệ thống, bổ sung công suất và kết nối với hạ tầng hiện có.",
+        "en": "Retrofit and expansion projects: system upgrades, additional capacity and connection to existing infrastructure."
+      }
+    ],
+    "note": {
+      "vi": "Phạm vi triển khai cụ thể được xác định theo hồ sơ thiết kế, yêu cầu kỹ thuật và thỏa thuận của từng dự án.",
+      "en": "The specific scope of work is defined by the design documents, technical requirements and agreement of each project."
+    }
+  },
+  {
+    "id": "cooling",
+    "slug": "thap-giai-nhiet-thiet-bi-cong-nghiep",
+    "code": "03",
+    "title": {
+      "vi": "Tháp giải nhiệt & thiết bị công nghiệp",
+      "en": "Cooling towers & industrial equipment"
+    },
+    "shortTitle": {
+      "vi": "Tháp giải nhiệt",
+      "en": "Cooling towers"
+    },
+    "tagline": {
+      "vi": "Thải nhiệt ổn định cho dây chuyền sản xuất",
+      "en": "Reliable heat rejection for production lines"
+    },
+    "short": {
+      "vi": "Tư vấn, cung cấp, lắp đặt và bảo trì tháp giải nhiệt, bơm tuần hoàn và thiết bị phụ trợ cho nhà máy.",
+      "en": "Consultancy, supply, installation and maintenance of cooling towers, circulation pumps and auxiliary equipment for factories."
+    },
+    "intro": {
+      "vi": "Fansipan Group cung cấp giải pháp tháp giải nhiệt và thiết bị phụ trợ phục vụ hoạt động sản xuất. Phạm vi dịch vụ bao gồm tư vấn, lựa chọn thiết bị, cung cấp, lắp đặt, chạy thử và bảo trì, phù hợp với yêu cầu kỹ thuật và điều kiện vận hành của từng nhà máy.",
+      "en": "Fansipan Group provides cooling tower and auxiliary equipment solutions for production operations. Our scope covers consultancy, equipment selection, supply, installation, commissioning and maintenance, matched to the technical requirements and operating conditions of each factory."
+    },
+    "role": [
+      {
+        "vi": "Thải nhiệt cho hệ thống: tháp giải nhiệt làm mát nước tuần hoàn bằng cách trao đổi nhiệt với không khí, phục vụ hệ thống Chiller giải nhiệt nước và các thiết bị sản xuất sử dụng nước làm mát.",
+        "en": "Heat rejection: cooling towers cool circulating water through heat exchange with air, serving water-cooled chillers and production equipment that uses cooling water."
+      },
+      {
+        "vi": "Duy trì điều kiện vận hành: cung cấp nước làm mát với nhiệt độ và lưu lượng phù hợp, hỗ trợ thiết bị hoạt động ổn định.",
+        "en": "Operating conditions: supplying cooling water at the right temperature and flow rate to keep equipment stable."
+      },
+      {
+        "vi": "Hỗ trợ tính liên tục của sản xuất: hạn chế nguy cơ gián đoạn do quá nhiệt hoặc hệ thống phụ trợ không đáp ứng nhu cầu.",
+        "en": "Production continuity: reducing the risk of interruptions caused by overheating or inadequate auxiliary systems."
+      },
+      {
+        "vi": "Nâng cao hiệu quả sử dụng tài nguyên: lựa chọn thiết bị, điều khiển và phương án tuần hoàn nước phù hợp để quản lý điện năng, nước sử dụng và chi phí vận hành.",
+        "en": "Resource efficiency: appropriate equipment, controls and water circulation strategies to manage power, water use and operating costs."
+      },
+      {
+        "vi": "Duy trì hiệu suất thiết bị: kiểm tra, vệ sinh và bảo trì giúp kiểm soát cáu cặn, ăn mòn, rung động và suy giảm khả năng trao đổi nhiệt.",
+        "en": "Equipment performance: inspection, cleaning and maintenance to control scaling, corrosion, vibration and loss of heat exchange capacity."
+      }
+    ],
+    "scope": [
+      {
+        "title": {
+          "vi": "Tư vấn và lựa chọn giải pháp",
+          "en": "Consultancy & solution selection"
+        },
+        "items": [
+          {
+            "vi": "Khảo sát hệ thống hiện hữu và nhu cầu làm mát của thiết bị, dây chuyền.",
+            "en": "Survey existing systems and the cooling demand of equipment and production lines."
+          },
+          {
+            "vi": "Xác định tải nhiệt, lưu lượng nước, nhiệt độ nước vào – ra và điều kiện môi trường phục vụ lựa chọn tháp.",
+            "en": "Determine heat load, water flow, inlet and outlet temperatures and environmental conditions for tower selection."
+          },
+          {
+            "vi": "Đề xuất loại tháp, số lượng tổ tháp, phương án bố trí và điều khiển theo nhu cầu vận hành.",
+            "en": "Recommend tower type, number of cells, layout and control strategy based on operating needs."
+          },
+          {
+            "vi": "Xem xét không gian lắp đặt, khả năng tiếp cận bảo trì, tiếng ồn và phương án kết nối với hạ tầng hiện có.",
+            "en": "Consider installation space, maintenance access, noise and connection to existing infrastructure."
+          }
+        ]
+      },
+      {
+        "title": {
+          "vi": "Cung cấp và lắp đặt",
+          "en": "Supply & installation"
+        },
+        "items": [
+          {
+            "vi": "Tháp giải nhiệt và các bộ phận liên quan: quạt, động cơ, bộ truyền động, tấm giải nhiệt, bộ phân phối nước và bộ tách giọt.",
+            "en": "Cooling towers and components: fans, motors, drives, fill media, water distribution and drift eliminators."
+          },
+          {
+            "vi": "Bơm tuần hoàn, đường ống, van, bộ lọc và thiết bị đo lường.",
+            "en": "Circulation pumps, piping, valves, filters and measuring instruments."
+          },
+          {
+            "vi": "Hệ thống cấp nước bổ sung, xả đáy và xử lý nước theo yêu cầu thiết kế.",
+            "en": "Make-up water, blowdown and water treatment systems to design requirements."
+          },
+          {
+            "vi": "Tủ điện, biến tần và hệ thống điều khiển, giám sát.",
+            "en": "Electrical panels, variable frequency drives and control and monitoring systems."
+          },
+          {
+            "vi": "Thiết bị phụ trợ công nghiệp như quạt công nghiệp, bộ cánh quạt, bơm và thiết bị trao đổi nhiệt theo phạm vi dự án.",
+            "en": "Industrial auxiliary equipment such as fans, fan assemblies, pumps and heat exchangers within the project scope."
+          },
+          {
+            "vi": "Giá đỡ, kết cấu phụ trợ và các điểm đấu nối kỹ thuật.",
+            "en": "Supports, secondary structures and technical connection points."
+          }
+        ]
+      },
+      {
+        "title": {
+          "vi": "Bảo trì và cải tạo",
+          "en": "Maintenance & retrofit"
+        },
+        "items": [
+          {
+            "vi": "Vệ sinh tháp, bể nước, tấm giải nhiệt và bộ phân phối nước.",
+            "en": "Clean towers, basins, fill media and water distribution systems."
+          },
+          {
+            "vi": "Kiểm tra quạt, động cơ, bộ truyền động, độ rung và tình trạng rò rỉ.",
+            "en": "Inspect fans, motors, drives, vibration and leakage."
+          },
+          {
+            "vi": "Thay thế linh kiện hao mòn hoặc hư hỏng.",
+            "en": "Replace worn or damaged components."
+          },
+          {
+            "vi": "Kiểm tra thông số vận hành, đánh giá khả năng đáp ứng tải.",
+            "en": "Check operating parameters and assess load capacity."
+          },
+          {
+            "vi": "Đề xuất nâng cấp công suất, điều khiển hoặc bố trí hệ thống khi nhu cầu sản xuất thay đổi.",
+            "en": "Recommend capacity, control or layout upgrades when production needs change."
+          }
+        ]
+      }
+    ],
+    "audiences": [
+      {
+        "vi": "Nhà máy sản xuất công nghiệp: các dây chuyền, máy móc và công đoạn cần thải nhiệt bằng nước.",
+        "en": "Industrial factories: lines, machinery and processes that require water-based heat rejection."
+      },
+      {
+        "vi": "Nhà máy nhựa, cơ khí và gia công kim loại: làm mát khuôn, máy và thiết bị công nghệ theo yêu cầu sản xuất.",
+        "en": "Plastics, mechanical and metalworking plants: mould, machine and process equipment cooling."
+      },
+      {
+        "vi": "Nhà máy thực phẩm, đồ uống và hóa chất: phục vụ các hệ thống làm mát, trao đổi nhiệt và tiện ích phụ trợ.",
+        "en": "Food, beverage and chemical plants: cooling, heat exchange and auxiliary utility systems."
+      },
+      {
+        "vi": "Tòa nhà, trung tâm thương mại, khách sạn: ứng dụng cho hệ thống điều hòa trung tâm sử dụng Chiller giải nhiệt nước.",
+        "en": "Buildings, shopping centres and hotels: central air conditioning using water-cooled chillers."
+      },
+      {
+        "vi": "Công trình cải tạo, mở rộng nhà máy: thay thế thiết bị xuống cấp, bổ sung công suất hoặc nâng cấp hệ thống hiện hữu.",
+        "en": "Factory retrofit and expansion: replace aging equipment, add capacity or upgrade existing systems."
+      }
+    ],
+    "note": {
+      "vi": "Phạm vi thiết bị và công việc được xác định theo hồ sơ kỹ thuật và yêu cầu cụ thể của từng dự án.",
+      "en": "The equipment and work scope are defined by the technical documents and specific requirements of each project."
+    }
+  },
+  {
+    "id": "maintenance",
+    "slug": "dich-vu-bao-tri-chuyen-nghiep",
+    "code": "04",
+    "title": {
+      "vi": "Dịch vụ bảo trì chuyên nghiệp",
+      "en": "Professional maintenance services"
+    },
+    "shortTitle": {
+      "vi": "Bảo trì hệ thống",
+      "en": "System maintenance"
+    },
+    "tagline": {
+      "vi": "Bảo trì chủ động, vận hành liên tục",
+      "en": "Proactive maintenance, continuous operation"
+    },
+    "short": {
+      "vi": "Bảo trì định kỳ, bảo trì phòng ngừa, xử lý sự cố và tối ưu vận hành cho hệ thống cơ điện, HVAC và thiết bị công nghiệp.",
+      "en": "Scheduled and preventive maintenance, troubleshooting and operational optimisation for M&E, HVAC and industrial equipment."
+    },
+    "intro": {
+      "vi": "Fansipan Group hướng tới việc cung cấp dịch vụ bảo trì chủ động, linh hoạt và phù hợp với từng công trình, không chỉ tập trung xử lý sự cố mà còn chú trọng phòng ngừa, tối ưu vận hành và duy trì hiệu suất hệ thống trong dài hạn.",
+      "en": "Fansipan Group delivers proactive, flexible maintenance tailored to each facility. We go beyond troubleshooting to focus on prevention, operational optimisation and long-term system performance."
+    },
+    "role": [
+      {
+        "vi": "Duy trì hiệu suất, độ ổn định và tuổi thọ của hệ thống, thiết bị, đồng thời hạn chế sự cố phát sinh trong quá trình vận hành.",
+        "en": "Maintain system performance, stability and equipment life while reducing operational incidents."
+      },
+      {
+        "vi": "Cung cấp giải pháp bảo trì theo từng loại thiết bị và đặc thù công trình, kết hợp giữa kiểm tra định kỳ, bảo dưỡng, xử lý sự cố và tư vấn kỹ thuật.",
+        "en": "Maintenance solutions by equipment type and facility, combining scheduled inspection, servicing, troubleshooting and engineering advice."
+      },
+      {
+        "vi": "Triển khai chủ động giúp doanh nghiệp giảm thời gian dừng hệ thống, kiểm soát chi phí vận hành và đảm bảo hệ thống hoạt động an toàn, liên tục.",
+        "en": "Proactive delivery helps reduce downtime, control operating costs and keep systems running safely and continuously."
+      }
+    ],
+    "scope": [
+      {
+        "title": {
+          "vi": "Phạm vi công việc",
+          "en": "Scope of work"
+        },
+        "items": [
+          {
+            "vi": "Khảo sát và đánh giá hiện trạng: kiểm tra hệ thống, thiết bị và điều kiện vận hành thực tế tại công trình.",
+            "en": "Survey and condition assessment: inspect systems, equipment and actual operating conditions on site."
+          },
+          {
+            "vi": "Bảo trì định kỳ: kiểm tra, vệ sinh, bảo dưỡng và hiệu chỉnh thiết bị theo kế hoạch.",
+            "en": "Scheduled maintenance: inspection, cleaning, servicing and adjustment according to plan."
+          },
+          {
+            "vi": "Bảo trì phòng ngừa: phát hiện sớm các dấu hiệu bất thường, nguy cơ hư hỏng và đưa ra phương án xử lý trước khi xảy ra sự cố.",
+            "en": "Preventive maintenance: early detection of anomalies and failure risks, with corrective plans before incidents occur."
+          },
+          {
+            "vi": "Xử lý sự cố: kiểm tra nguyên nhân, khắc phục các vấn đề phát sinh và đưa hệ thống trở lại trạng thái vận hành ổn định.",
+            "en": "Incident response: identify root causes, resolve issues and return systems to stable operation."
+          },
+          {
+            "vi": "Kiểm tra và hiệu chỉnh hệ thống: đánh giá các thông số vận hành, thực hiện điều chỉnh nhằm đảm bảo thiết bị hoạt động đúng yêu cầu kỹ thuật.",
+            "en": "System inspection and tuning: evaluate operating parameters and adjust to ensure equipment meets technical requirements."
+          },
+          {
+            "vi": "Thay thế và sửa chữa: cung cấp, thay thế linh kiện, vật tư và thiết bị cần thiết trong quá trình bảo trì, sửa chữa.",
+            "en": "Replacement and repair: supply and replace components, materials and equipment required during maintenance and repair."
+          },
+          {
+            "vi": "Theo dõi và lập báo cáo: ghi nhận tình trạng thiết bị, các hạng mục đã thực hiện, vấn đề phát sinh và đề xuất kế hoạch bảo trì tiếp theo.",
+            "en": "Monitoring and reporting: record equipment condition, completed work, issues found and recommendations for the next maintenance cycle."
+          },
+          {
+            "vi": "Tư vấn tối ưu vận hành: đề xuất giải pháp nâng cao hiệu suất, giảm tiêu hao năng lượng và kéo dài tuổi thọ thiết bị.",
+            "en": "Operational optimisation: recommend measures to improve performance, reduce energy use and extend equipment life."
+          }
+        ]
+      }
+    ],
+    "audiences": [
+      {
+        "vi": "Nhà máy, nhà xưởng và khu công nghiệp.",
+        "en": "Factories, workshops and industrial parks."
+      },
+      {
+        "vi": "Tòa nhà văn phòng, trung tâm thương mại và khu phức hợp.",
+        "en": "Office buildings, shopping centres and mixed-use complexes."
+      },
+      {
+        "vi": "Khách sạn, resort và các công trình dịch vụ.",
+        "en": "Hotels, resorts and service facilities."
+      },
+      {
+        "vi": "Bệnh viện, trường học và công trình công cộng.",
+        "en": "Hospitals, schools and public buildings."
+      },
+      {
+        "vi": "Kho hàng, trung tâm logistics và các công trình có yêu cầu kiểm soát môi trường.",
+        "en": "Warehouses, logistics centres and facilities with environmental control requirements."
+      },
+      {
+        "vi": "Các công trình sử dụng hệ thống điều hòa – làm lạnh, cơ điện và thiết bị công nghiệp.",
+        "en": "Facilities using HVAC, M&E and industrial equipment systems."
+      }
+    ],
+    "note": {
+      "vi": "Lịch bảo trì và phạm vi công việc được xây dựng theo tình trạng thiết bị và nhu cầu vận hành của từng công trình.",
+      "en": "Maintenance schedules and scope are built around equipment condition and the operating needs of each facility."
+    }
+  }
+]

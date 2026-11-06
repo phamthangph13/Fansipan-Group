@@ -1,0 +1,373 @@
+{
+  "company": {
+    "displayName": "FANSIPAN GROUP.,JSC",
+    "legalName": {
+      "vi": "Công ty cổ phần Fansipan Group",
+      "en": "Fansipan Group Joint Stock Company"
+    },
+    "shortName": "Fansipan Group",
+    "slogan": {
+      "vi": "Vươn tới tầm cao",
+      "en": "Rising to new heights"
+    },
+    "taxCode": "",
+    "domain": "https://fansipan-group.vn",
+    "foundedYear": null
+  },
+  "contact": {
+    "hotline": "0913339190",
+    "hotlineDisplay": "0913 339 190",
+    "phone": "02462602646",
+    "phoneDisplay": "024 6260 2646",
+    "email": "sales.fansipan@gmail.com",
+    "careersEmail": "sales.fansipan@gmail.com",
+    "zalo": "0913339190",
+    "workingHours": ""
+  },
+  "offices": [
+    {
+      "id": "office",
+      "kind": {
+        "vi": "Văn phòng giao dịch",
+        "en": "Head office"
+      },
+      "name": {
+        "vi": "Văn phòng Hà Nội",
+        "en": "Hanoi office"
+      },
+      "address": {
+        "vi": "C02-L18 An Vượng Villa, KĐT Dương Nội, phường Dương Nội, Hà Nội",
+        "en": "C02-L18 An Vuong Villa, Duong Noi urban area, Duong Noi ward, Hanoi"
+      },
+      "mapUrl": "https://maps.app.goo.gl/JdASXR5PiFTs5S9t7",
+      "mapEmbed": "https://www.google.com/maps?q=C02-L18%20An%20Vuong%20Villa%2C%20Duong%20Noi%2C%20Ha%20Noi&z=15&output=embed"
+    },
+    {
+      "id": "factory",
+      "kind": {
+        "vi": "Nhà xưởng",
+        "en": "Factory"
+      },
+      "name": {
+        "vi": "Nhà xưởng Hưng Yên",
+        "en": "Hung Yen factory"
+      },
+      "address": {
+        "vi": "Số 868 đường Nguyễn Văn Linh, phường Đường Hào, tỉnh Hưng Yên",
+        "en": "No. 868 Nguyen Van Linh road, Duong Hao ward, Hung Yen province"
+      },
+      "mapUrl": "https://maps.app.goo.gl/eQqjEJDj5GsLJPuM8",
+      "mapEmbed": "https://www.google.com/maps?q=868%20Nguyen%20Van%20Linh%2C%20Duong%20Hao%2C%20Hung%20Yen&z=15&output=embed"
+    }
+  ],
+  "stats": [
+    {
+      "value": 11,
+      "label": {
+        "vi": "Năm kinh nghiệm",
+        "en": "Years of experience"
+      }
+    },
+    {
+      "value": 50,
+      "label": {
+        "vi": "Nhân sự & chuyên gia",
+        "en": "People & specialists"
+      }
+    },
+    {
+      "value": 20,
+      "label": {
+        "vi": "Dự án & khách hàng",
+        "en": "Projects & clients"
+      }
+    }
+  ],
+  "about": {
+    "intro": {
+      "vi": "Fansipan Group – Chuyên gia Cơ điện (M&E), HVAC, tháp giải nhiệt và bảo trì hệ thống. Fansipan Group cung cấp giải pháp cơ điện toàn diện, từ tư vấn, thiết kế, cung cấp thiết bị, thi công đến vận hành và bảo trì hệ thống.\n\nVới đội ngũ kỹ sư giàu kinh nghiệm và quy trình chuyên nghiệp, chúng tôi cam kết tối ưu hiệu suất, tiết kiệm năng lượng, đảm bảo an toàn và kéo dài tuổi thọ thiết bị.\n\nKhông chỉ triển khai công trình, Fansipan Group còn đồng hành lâu dài cùng khách hàng, hướng đến chất lượng bền vững và hiệu quả vận hành tối ưu. Fansipan Group – Vươn tới tầm cao.",
+      "en": "Fansipan Group – specialists in M&E, HVAC, cooling towers and system maintenance. We deliver integrated mechanical and electrical solutions, from consultancy, design and equipment supply to installation, operation and maintenance.\n\nWith an experienced engineering team and disciplined processes, we are committed to optimising performance, saving energy, ensuring safety and extending equipment life.\n\nBeyond project delivery, Fansipan Group works alongside clients for the long term, pursuing durable quality and optimal operating efficiency. Fansipan Group – Rising to new heights."
+    },
+    "vision": [
+      {
+        "vi": "Trở thành doanh nghiệp hàng đầu Việt Nam trong lĩnh vực cơ điện công trình, được khách hàng và đối tác lựa chọn đầu tiên khi tìm kiếm những giải pháp kỹ thuật tối ưu, hiện đại và bền vững.",
+        "en": "To become a leading Vietnamese company in building services, the first choice for clients and partners seeking optimal, modern and sustainable engineering solutions."
+      },
+      {
+        "vi": "Không ngừng đổi mới, nâng cao năng lực quản trị và làm chủ công nghệ để đóng góp vào sự phát triển của những công trình mang tầm vóc quốc gia và quốc tế.",
+        "en": "To keep innovating, strengthening governance and mastering technology, contributing to projects of national and international scale."
+      }
+    ],
+    "mission": [
+      {
+        "vi": "Mang đến các giải pháp cơ điện toàn diện với chất lượng vượt trội, góp phần tạo nên những công trình an toàn, hiệu quả và bền vững.",
+        "en": "To deliver comprehensive M&E solutions of outstanding quality, contributing to safe, efficient and sustainable projects."
+      },
+      {
+        "vi": "Kiến tạo môi trường làm việc chuyên nghiệp để mỗi cá nhân đều có cơ hội phát triển, cống hiến và khẳng định giá trị.",
+        "en": "To create a professional workplace where every individual can grow, contribute and prove their value."
+      },
+      {
+        "vi": "Xây dựng mối quan hệ hợp tác lâu dài trên nền tảng uy tín, minh bạch và cùng phát triển.",
+        "en": "To build long-term partnerships on a foundation of credibility, transparency and shared growth."
+      }
+    ],
+    "values": [
+      {
+        "title": {
+          "vi": "Uy tín là nền móng",
+          "en": "Credibility is the foundation"
+        },
+        "body": {
+          "vi": "Mọi cam kết đều được thực hiện bằng hành động. Chúng tôi xem uy tín là tài sản lớn nhất và là thước đo thành công của doanh nghiệp.",
+          "en": "Every commitment is delivered through action. We treat credibility as our greatest asset and the measure of our success."
+        }
+      },
+      {
+        "title": {
+          "vi": "Chất lượng là danh dự",
+          "en": "Quality is our honour"
+        },
+        "body": {
+          "vi": "Mỗi công trình mang thương hiệu Fansipan Group đều phải đáp ứng các tiêu chuẩn kỹ thuật cao nhất và đem lại giá trị thực sự cho khách hàng.",
+          "en": "Every project under the Fansipan Group name must meet the highest technical standards and deliver real value to the client."
+        }
+      },
+      {
+        "title": {
+          "vi": "Trách nhiệm là kim chỉ nam",
+          "en": "Responsibility is our compass"
+        },
+        "body": {
+          "vi": "Chúng tôi chịu trách nhiệm đến cùng với từng giải pháp, từng hạng mục và từng cam kết đã đưa ra.",
+          "en": "We take full responsibility for every solution, every work item and every commitment we make."
+        }
+      },
+      {
+        "title": {
+          "vi": "Con người là trung tâm",
+          "en": "People come first"
+        },
+        "body": {
+          "vi": "Đội ngũ nhân sự chính là sức mạnh cốt lõi tạo nên sự khác biệt của Fansipan Group.",
+          "en": "Our people are the core strength that sets Fansipan Group apart."
+        }
+      },
+      {
+        "title": {
+          "vi": "Sáng tạo để dẫn đầu",
+          "en": "Innovation leads the way"
+        },
+        "body": {
+          "vi": "Không ngừng học hỏi, đổi mới và ứng dụng công nghệ hiện đại nhằm tạo ra những giải pháp hiệu quả hơn mỗi ngày.",
+          "en": "We keep learning, innovating and applying modern technology to create more effective solutions every day."
+        }
+      },
+      {
+        "title": {
+          "vi": "Hợp tác để cùng phát triển",
+          "en": "Partnership drives growth"
+        },
+        "body": {
+          "vi": "Chúng tôi tin rằng thành công bền vững luôn được xây dựng trên tinh thần đồng hành, chia sẻ và tạo ra giá trị chung.",
+          "en": "We believe sustainable success is built on partnership, sharing and creating shared value."
+        }
+      }
+    ],
+    "capabilityNote": {
+      "vi": "Năng lực được tổ chức theo một vòng đời công trình: tư vấn – thiết kế – cung cấp thiết bị – thi công – chạy thử – bàn giao – bảo trì.",
+      "en": "Our capability follows the full project lifecycle: consultancy – design – equipment supply – installation – commissioning – handover – maintenance."
+    }
+  },
+  "processIntro": {
+    "vi": "Lấy uy tín làm nền tảng, chất lượng làm trọng tâm.",
+    "en": "Credibility as the foundation, quality at the centre."
+  },
+  "process": [
+    {
+      "title": {
+        "vi": "Tiếp nhận yêu cầu",
+        "en": "Requirement intake"
+      },
+      "body": {
+        "vi": "Ghi nhận hiện trạng, nhu cầu vận hành và mục tiêu của công trình.",
+        "en": "We record the existing conditions, operating needs and project objectives."
+      }
+    },
+    {
+      "title": {
+        "vi": "Khảo sát & đánh giá",
+        "en": "Survey & assessment"
+      },
+      "body": {
+        "vi": "Đội ngũ kỹ thuật khảo sát thực tế, đo đạc và xác định phạm vi công việc.",
+        "en": "Our engineers survey the site, take measurements and define the scope of work."
+      }
+    },
+    {
+      "title": {
+        "vi": "Đề xuất giải pháp & báo giá",
+        "en": "Solution & quotation"
+      },
+      "body": {
+        "vi": "Lựa chọn phương án kỹ thuật, thiết bị và lập kế hoạch chi phí minh bạch.",
+        "en": "We select the technical approach and equipment, and prepare a transparent cost plan."
+      }
+    },
+    {
+      "title": {
+        "vi": "Thi công & lắp đặt",
+        "en": "Installation & construction"
+      },
+      "body": {
+        "vi": "Triển khai theo hồ sơ được phê duyệt, kiểm soát chất lượng và an toàn tại từng hạng mục.",
+        "en": "Works are executed to the approved documents, with quality and safety controlled at every stage."
+      }
+    },
+    {
+      "title": {
+        "vi": "Chạy thử & nghiệm thu",
+        "en": "Commissioning & acceptance"
+      },
+      "body": {
+        "vi": "Kiểm tra thông số, cân chỉnh và xác nhận khả năng đáp ứng yêu cầu thiết kế.",
+        "en": "We verify parameters, tune the systems and confirm performance against the design requirements."
+      }
+    },
+    {
+      "title": {
+        "vi": "Bàn giao & bảo trì",
+        "en": "Handover & maintenance"
+      },
+      "body": {
+        "vi": "Bàn giao hồ sơ, hướng dẫn vận hành và đồng hành bảo trì theo thỏa thuận.",
+        "en": "We hand over documentation, guide operation and stay on for maintenance as agreed."
+      }
+    }
+  ],
+  "homeSections": [
+    {
+      "id": "hero",
+      "enabled": true,
+      "label": { "vi": "Hero", "en": "Hero" }
+    },
+    {
+      "id": "about",
+      "enabled": true,
+      "label": { "vi": "Giới thiệu", "en": "About" }
+    },
+    {
+      "id": "stats",
+      "enabled": true,
+      "label": { "vi": "Số liệu nổi bật", "en": "Key figures" }
+    },
+    {
+      "id": "services",
+      "enabled": true,
+      "label": { "vi": "Lĩnh vực hoạt động", "en": "Services" }
+    },
+    {
+      "id": "process",
+      "enabled": true,
+      "label": { "vi": "Quy trình triển khai", "en": "Process" }
+    },
+    {
+      "id": "projects",
+      "enabled": true,
+      "label": { "vi": "Dự án tiêu biểu", "en": "Featured projects" }
+    },
+    {
+      "id": "catalogue",
+      "enabled": true,
+      "label": { "vi": "Hồ sơ năng lực", "en": "Company profile" }
+    },
+    {
+      "id": "news",
+      "enabled": true,
+      "label": { "vi": "Tin tức & kiến thức", "en": "News & insights" }
+    },
+    {
+      "id": "careers",
+      "enabled": true,
+      "label": { "vi": "Tuyển dụng", "en": "Careers" }
+    },
+    {
+      "id": "clients",
+      "enabled": true,
+      "label": { "vi": "Khách hàng & đối tác", "en": "Clients & partners" }
+    },
+    {
+      "id": "contact",
+      "enabled": true,
+      "label": { "vi": "Liên hệ", "en": "Contact" }
+    },
+    {
+      "id": "certifications",
+      "enabled": false,
+      "label": { "vi": "Chứng chỉ & giải thưởng", "en": "Certifications & awards" }
+    },
+    {
+      "id": "leadership",
+      "enabled": false,
+      "label": { "vi": "Ban lãnh đạo", "en": "Leadership" }
+    },
+    {
+      "id": "facilities",
+      "enabled": false,
+      "label": { "vi": "Cơ sở vật chất", "en": "Facilities" }
+    },
+    {
+      "id": "testimonials",
+      "enabled": false,
+      "label": { "vi": "Cảm nhận khách hàng", "en": "Testimonials" }
+    },
+    {
+      "id": "faq",
+      "enabled": false,
+      "label": { "vi": "Câu hỏi thường gặp", "en": "FAQ" }
+    },
+    {
+      "id": "story",
+      "enabled": false,
+      "label": { "vi": "Câu chuyện hình thành", "en": "Our story" }
+    }
+  ],
+  "sectors": [
+    { "vi": "Hàng không", "en": "Aviation" },
+    { "vi": "Điện tử", "en": "Electronics" },
+    { "vi": "Cơ khí chế tạo", "en": "Machinery" },
+    { "vi": "Giấy & bao bì", "en": "Paper & packaging" },
+    { "vi": "Thép", "en": "Steel" },
+    { "vi": "Khách sạn", "en": "Hospitality" },
+    { "vi": "Nhiệt điện", "en": "Power generation" }
+  ],
+  "social": {
+    "facebook": "",
+    "youtube": "",
+    "linkedin": "",
+    "zalo": "https://zalo.me/0913339190"
+  },
+  "catalogue": {
+    "pdf": "/catalogue/fansipan-group-profile.pdf",
+    "title": {
+      "vi": "Hồ sơ năng lực Fansipan Group",
+      "en": "Fansipan Group company profile"
+    },
+    "subtitle": {
+      "vi": "Năng lực, dịch vụ và dự án tiêu biểu",
+      "en": "Capabilities, services and selected projects"
+    },
+    "note": {
+      "vi": "Tài liệu được cập nhật bởi Fansipan Group. Bản PDF sẽ được thay thế khi có phiên bản mới.",
+      "en": "Published by Fansipan Group. The PDF will be replaced when a new edition is available."
+    }
+  },
+  "clients": {
+    "showLogos": false,
+    "logos": [],
+    "note": {
+      "vi": "Logo khách hàng và đối tác sẽ được cập nhật khi có xác nhận công bố.",
+      "en": "Client and partner logos will be added once publication is approved."
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "skills": {
+    "best-practices": {
+      "source": "mobbin/skills",
+      "sourceType": "github",
+      "skillPath": "skills/best-practices/SKILL.md",
+      "computedHash": "c285546eb6200fa3208831ce52dcc16688a1502facf8308640588acc807a18f9"
+    },
+    "design-taste-frontend": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/taste-skill/SKILL.md",
+      "computedHash": "23b3930015c478034b222e1a015da03a962c8ab48aee9fb4f3f69d977034feaa"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "89496d5dd00f4810205f351759594fc2742bf8eea85a2f2b2d1de59f4bd91576"
+    },
+    "pick-ui-library": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/pick-ui-library/SKILL.md",
+      "computedHash": "5d2a77bf0ecafbda85aa95fb49999b6d77945d9066ec83d970b62e5b388cd686"
+    },
+    "plain-writing": {
+      "source": "mobbin/skills",
+      "sourceType": "github",
+      "skillPath": "skills/plain-writing/SKILL.md",
+      "computedHash": "b5e8f34f4551c5f311c340379786622c566e6fa8bbbd47fc6c115027fff38bb4"
+    },
+    "redesign-screen": {
+      "source": "mobbin/skills",
+      "sourceType": "github",
+      "skillPath": "skills/redesign-screen/SKILL.md",
+      "computedHash": "f3dfc268b12c199d96d8acf41428ea95c0492e2902268a2319d6d5775eb0f5ee"
+    },
+    "search": {
+      "source": "mobbin/skills",
+      "sourceType": "github",
+      "skillPath": "skills/search/SKILL.md",
+      "computedHash": "261686741fda7ded5b2a133174435a7a6fc353a7f5cbd30c2b151779cebe6759"
+    },
+    "transitions-dev": {
+      "source": "Jakubantalik/transitions.dev",
+      "sourceType": "github",
+      "skillPath": "skills/transitions-dev/SKILL.md",
+      "computedHash": "c7f9b40c6676ecc6d890db4ffecafa1ddebdb4ebaed3098521928e5115bd871f"
+    },
+    "transitions-polish": {
+      "source": "Jakubantalik/transitions.dev",
+      "sourceType": "github",
+      "skillPath": "skills/transitions-polish/SKILL.md",
+      "computedHash": "3f0630020cdfd0ea3d582ac45201c1ad4bced2ef7d0a0145d4cc81ad25f57ec3"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "computedHash": "f3bc47f890f42a44db1007ab390709ec368e4b8c089baee6b0007182236ac474"
+    }
+  }
+}

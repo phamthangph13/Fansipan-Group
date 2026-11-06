@@ -1,0 +1,222 @@
+[
+  {
+    "id": "vaeco-noi-bai",
+    "name": "VAECO (Kỹ thuật Hàng không)",
+    "nameEn": "VAECO (Aviation Engineering)",
+    "scope": {
+      "vi": "Cung cấp máy nén khí, lắp đặt đường ống khí nén SUS304 phục vụ bảo dưỡng tàu bay.",
+      "en": "Supply of air compressors and installation of SUS304 compressed-air piping for aircraft maintenance."
+    },
+    "location": {
+      "vi": "Sân bay Nội Bài, Sóc Sơn, Hà Nội",
+      "en": "Noi Bai Airport, Soc Son, Hanoi"
+    },
+    "year": null,
+    "status": "completed",
+    "categories": ["me"],
+    "featured": true,
+    "allowPublic": false,
+    "image": null,
+    "clientLogo": null
+  },
+  {
+    "id": "ge-vietnam-hai-phong-chiller",
+    "name": "Chi nhánh GE Việt Nam tại Hải Phòng",
+    "nameEn": "GE Vietnam – Hai Phong Branch",
+    "scope": {
+      "vi": "Lắp đặt, thay thế hệ thống đường ống nước cho chiller.",
+      "en": "Installation and replacement of chilled-water piping for chiller systems."
+    },
+    "location": {
+      "vi": "Hải Phòng",
+      "en": "Hai Phong"
+    },
+    "year": null,
+    "status": "completed",
+    "categories": ["hvac"],
+    "featured": false,
+    "allowPublic": false,
+    "image": null,
+    "clientLogo": null
+  },
+  {
+    "id": "nha-may-eba",
+    "name": "Nhà máy EBA",
+    "nameEn": "EBA Factory",
+    "scope": {
+      "vi": "Súc rửa hệ thống, bảo trì lò cảm ứng tần số trung bình.",
+      "en": "System flushing and maintenance of medium-frequency induction furnaces."
+    },
+    "location": {
+      "vi": "KCN Nomura, Hải Phòng",
+      "en": "Nomura Industrial Park, Hai Phong"
+    },
+    "year": null,
+    "status": "completed",
+    "categories": ["maintenance"],
+    "featured": false,
+    "allowPublic": false,
+    "image": null,
+    "clientLogo": null
+  },
+  {
+    "id": "nha-may-giay-an-hoa",
+    "name": "Nhà máy Giấy An Hòa",
+    "nameEn": "An Hoa Paper Mill",
+    "scope": {
+      "vi": "Thi công phủ FRP khu lưu trữ hóa chất.",
+      "en": "FRP coating works for the chemical storage area."
+    },
+    "location": {
+      "vi": "Sơn Dương, Tuyên Quang",
+      "en": "Son Duong, Tuyen Quang"
+    },
+    "year": null,
+    "status": "completed",
+    "categories": ["cooling"],
+    "featured": false,
+    "allowPublic": false,
+    "image": null,
+    "clientLogo": null
+  },
+  {
+    "id": "nha-may-panasonic",
+    "name": "Nhà máy Panasonic",
+    "nameEn": "Panasonic Factory",
+    "scope": {
+      "vi": "Bảo trì, sửa chữa tháp giải nhiệt và AHU.",
+      "en": "Maintenance and repair of cooling towers and AHUs."
+    },
+    "location": {
+      "vi": "KCN Thăng Long, Hà Nội",
+      "en": "Thang Long Industrial Park, Hanoi"
+    },
+    "year": null,
+    "status": "completed",
+    "categories": ["cooling", "maintenance"],
+    "featured": true,
+    "allowPublic": false,
+    "image": null,
+    "clientLogo": null
+  },
+  {
+    "id": "pullman-ha-noi",
+    "name": "Khách sạn Pullman Hà Nội",
+    "nameEn": "Pullman Hanoi Hotel",
+    "scope": {
+      "vi": "Cung cấp, lắp đặt đường ống, tháp giải nhiệt, bảo trì hệ thống điện.",
+      "en": "Supply and installation of piping and cooling towers, and maintenance of electrical systems."
+    },
+    "location": {
+      "vi": "40 Cát Linh, Hà Nội",
+      "en": "40 Cat Linh, Hanoi"
+    },
+    "year": null,
+    "status": "completed",
+    "categories": ["me", "cooling"],
+    "featured": true,
+    "allowPublic": false,
+    "image": null,
+    "clientLogo": null
+  },
+  {
+    "id": "nhiet-dien-na-duong",
+    "name": "Nhà máy Nhiệt điện Na Dương",
+    "nameEn": "Na Duong Thermal Power Plant",
+    "scope": {
+      "vi": "Bảo dưỡng tổng thể hệ thống làm mát lò hơi.",
+      "en": "Major maintenance of the boiler cooling system."
+    },
+    "location": {
+      "vi": "Na Dương, Lạng Sơn",
+      "en": "Na Duong, Lang Son"
+    },
+    "year": null,
+    "status": "completed",
+    "categories": ["maintenance", "cooling"],
+    "featured": true,
+    "allowPublic": false,
+    "image": null,
+    "clientLogo": null
+  },
+  {
+    "id": "hoa-phat-phoi-thep",
+    "name": "Nhà máy Phôi thép Hòa Phát",
+    "nameEn": "Hoa Phat Steel Billet Plant",
+    "scope": {
+      "vi": "Sửa chữa thiết bị.",
+      "en": "Equipment repair."
+    },
+    "location": {
+      "vi": "KCN Phố Nối A, Hưng Yên",
+      "en": "Pho Noi A Industrial Park, Hung Yen"
+    },
+    "year": null,
+    "status": "completed",
+    "categories": ["maintenance"],
+    "featured": false,
+    "allowPublic": false,
+    "image": null,
+    "clientLogo": null
+  },
+  {
+    "id": "panasonic-system-networks",
+    "name": "Panasonic System Networks Việt Nam",
+    "nameEn": "Panasonic System Networks Vietnam",
+    "scope": {
+      "vi": "Lắp đặt hệ thống phụ trợ (khí nén, làm mát, tủ điều khiển) cho dây chuyền hàn điểm.",
+      "en": "Installation of auxiliary systems (compressed air, cooling, control panels) for a spot-welding line."
+    },
+    "location": {
+      "vi": "Lô J1/2, KCN Thăng Long, Đông Anh, Hà Nội",
+      "en": "Lot J1/2, Thang Long Industrial Park, Dong Anh, Hanoi"
+    },
+    "year": null,
+    "status": "completed",
+    "categories": ["me"],
+    "featured": true,
+    "allowPublic": false,
+    "image": null,
+    "clientLogo": null
+  },
+  {
+    "id": "ge-vietnam-hai-phong-turbine",
+    "name": "Chi nhánh GE Việt Nam tại Hải Phòng",
+    "nameEn": "GE Vietnam – Hai Phong Branch",
+    "scope": {
+      "vi": "Lắp đặt hệ thống ống dẫn khí và hệ lọc khử mùi bằng nhựa trao đổi ion khu sản xuất tuabin.",
+      "en": "Installation of gas piping and an ion-exchange resin odour-removal filter system in the turbine production area."
+    },
+    "location": {
+      "vi": "KCN Nomura, An Dương, Hải Phòng",
+      "en": "Nomura Industrial Park, An Duong, Hai Phong"
+    },
+    "year": null,
+    "status": "completed",
+    "categories": ["me", "hvac"],
+    "featured": false,
+    "allowPublic": false,
+    "image": null,
+    "clientLogo": null
+  },
+  {
+    "id": "vaeco-tan-son-nhat",
+    "name": "VAECO chi nhánh Tân Sơn Nhất",
+    "nameEn": "VAECO – Tan Son Nhat Branch",
+    "scope": {
+      "vi": "Cung cấp, lắp đặt buồng sơn sấy hồng ngoại cho linh kiện, phụ tùng máy bay.",
+      "en": "Supply and installation of infrared paint-drying booths for aircraft components and spare parts."
+    },
+    "location": {
+      "vi": "Sân bay Tân Sơn Nhất, TP.HCM",
+      "en": "Tan Son Nhat Airport, Ho Chi Minh City"
+    },
+    "year": null,
+    "status": "completed",
+    "categories": ["cooling"],
+    "featured": true,
+    "allowPublic": false,
+    "image": null,
+    "clientLogo": null
+  }
+]
