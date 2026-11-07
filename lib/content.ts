@@ -41,6 +41,11 @@ export const getArticles = cache(async (): Promise<Article[]> => {
     .sort((a, b) => b.date.localeCompare(a.date));
 });
 
+export const getAllArticles = cache(async (): Promise<Article[]> => {
+  const articles = await readJson<Article[]>("news.json");
+  return articles.sort((a, b) => b.date.localeCompare(a.date));
+});
+
 export const getSubmissions = cache(async (): Promise<Submission[]> => {
   const items = await readJson<Submission[]>("submissions.json");
   return items.sort((a, b) => b.createdAt.localeCompare(a.createdAt));

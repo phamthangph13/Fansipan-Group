@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
@@ -113,18 +114,37 @@ export default async function ServicesPage({
                   index % 2 === 1 ? "lg:order-2" : "lg:order-1",
                 )}
               >
-                <div className="relative border border-line bg-[#f5f9fe] px-6 pb-5 pt-8">
-                  <span className="absolute left-6 top-6 font-mono text-[0.66rem] tracking-[0.18em] text-brand">
-                    {service.code}
-                  </span>
-                  <span className="absolute right-5 top-5 font-mono text-[0.6rem] uppercase tracking-[0.16em] text-muted/50">
-                    {t.labels.service}
-                  </span>
-                  <ServiceArt
-                    variant={service.id as ServiceArtVariant}
-                    className="mt-8"
-                  />
-                </div>
+                {service.image ? (
+                  <div className="group relative aspect-[4/3] overflow-hidden border border-line bg-sky">
+                    <Image
+                      src={service.image}
+                      alt={service.title[locale]}
+                      fill
+                      sizes="(min-width: 1024px) 40vw, 100vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                    />
+                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(7,26,53,0.4)_0%,rgba(7,26,53,0.02)_42%,rgba(7,26,53,0.72)_100%)]" />
+                    <span className="absolute left-4 top-4 bg-white/95 px-2.5 py-1 font-mono text-[0.64rem] tracking-[0.18em] text-brand">
+                      {service.code}
+                    </span>
+                    <span className="absolute right-4 top-4 border border-white/30 bg-navy/35 px-2.5 py-1 font-mono text-[0.58rem] uppercase tracking-[0.16em] text-white backdrop-blur">
+                      {t.labels.service}
+                    </span>
+                    <span className="absolute bottom-4 left-4 right-4 font-mono text-[0.58rem] uppercase tracking-[0.14em] text-white/85">
+                      {service.tagline[locale]}
+                    </span>
+                  </div>
+                ) : (
+                  <div className="relative border border-line bg-[#f5f9fe] px-6 pb-5 pt-8">
+                    <span className="absolute left-6 top-6 font-mono text-[0.66rem] tracking-[0.18em] text-brand">
+                      {service.code}
+                    </span>
+                    <span className="absolute right-5 top-5 font-mono text-[0.6rem] uppercase tracking-[0.16em] text-muted/50">
+                      {t.labels.service}
+                    </span>
+                    <ServiceArt variant={service.id as ServiceArtVariant} className="mt-8" />
+                  </div>
+                )}
               </div>
 
               <div className={cn("lg:col-span-7", index % 2 === 1 ? "lg:order-1" : "lg:order-2")}>

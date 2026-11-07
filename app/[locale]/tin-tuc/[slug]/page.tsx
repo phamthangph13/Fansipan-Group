@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Clock3, Facebook, Linkedin } from "lucide-react";
@@ -124,7 +125,17 @@ export default async function ArticlePage({
       <article className="bg-white py-12 lg:py-16">
         <div className="wrap">
           <div className="relative aspect-[21/9] overflow-hidden border border-line bg-sky">
-            <ArticleArt category={article.category} className="absolute inset-0 h-full w-full" />
+            {article.image ? (
+              <Image
+                src={article.image}
+                alt={article.title[locale]}
+                fill
+                sizes="100vw"
+                className="object-cover"
+              />
+            ) : (
+              <ArticleArt category={article.category} className="absolute inset-0 h-full w-full" />
+            )}
             <span className="absolute left-5 top-5 border border-brand/15 bg-white/95 px-3 py-1.5 font-mono text-[0.6rem] uppercase tracking-[0.14em] text-brand">
               {categoryLabel(article.category, locale)}
             </span>

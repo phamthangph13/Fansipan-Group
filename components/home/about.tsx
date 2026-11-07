@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Compass, Layers, Target } from "lucide-react";
 import { cn, splitParagraphs } from "@/lib/utils";
@@ -111,6 +112,25 @@ export function AboutSection({
             >
               <div className="relative border border-line bg-cloud p-7 sm:p-10">
                 <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,var(--color-brand),transparent_60%)]" />
+                <div className="relative -mx-7 -mt-7 mb-7 aspect-[16/7] overflow-hidden border-b border-line bg-sky sm:-mx-10 sm:-mt-10 sm:mb-8">
+                  <Image
+                    src="/images/about/plant.jpg"
+                    alt={
+                      locale === "vi"
+                        ? "Hệ thống công nghiệp tại nhà máy"
+                        : "Industrial systems at a plant"
+                    }
+                    fill
+                    sizes="(min-width: 1024px) 60vw, 100vw"
+                    className="object-cover"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(7,26,53,0.05)_0%,rgba(7,26,53,0.08)_45%,rgba(7,26,53,0.72)_100%)]" />
+                  <p className="absolute bottom-4 left-5 right-5 font-mono text-[0.58rem] uppercase tracking-[0.18em] text-white/75">
+                    {locale === "vi"
+                      ? "Năng lực triển khai tại nhà máy và khu công nghiệp"
+                      : "Delivery capability across factories and industrial parks"}
+                  </p>
+                </div>
                 <p className="display-3 max-w-[36ch] text-ink">{paragraphs[0]}</p>
                 <div className="mt-7 space-y-4 border-t border-line pt-7">
                   {paragraphs.slice(1).map((paragraph) => (

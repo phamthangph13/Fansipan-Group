@@ -42,7 +42,10 @@ export function verifySessionToken(token: string | undefined) {
 }
 
 export function checkPassword(input: string) {
-  const expected = process.env.ADMIN_PASSWORD || "fansipan2026";
+  const expected =
+    process.env.ADMIN_PASSWORD ||
+    (process.env.NODE_ENV === "production" ? null : "fansipan2026");
+  if (!expected) return false;
   const a = crypto.createHash("sha256").update(input).digest();
   const b = crypto.createHash("sha256").update(expected).digest();
   return crypto.timingSafeEqual(a, b);

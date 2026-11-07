@@ -363,11 +363,18 @@
     }
   },
   "clients": {
-    "showLogos": false,
-    "logos": [],
+    "showLogos": true,
+    "logos": [
+      { "name": "An Phat", "src": "/images/clients/an-phat.png" },
+      { "name": "VAECO", "src": "/images/clients/vaeco.png" },
+      { "name": "Panasonic", "src": "/images/clients/panasonic.png" },
+      { "name": "j-TECH", "src": "/images/clients/j-tech.png" },
+      { "name": "Vitto", "src": "/images/clients/vitto.png" },
+      { "name": "Toyoda Gosei", "src": "/images/clients/toyoda-gosei.png" }
+    ],
     "note": {
-      "vi": "Logo khách hàng và đối tác sẽ được cập nhật khi có xác nhận công bố.",
-      "en": "Client and partner logos will be added once publication is approved."
+      "vi": "Khách hàng và đối tác tiêu biểu của Fansipan Group.",
+      "en": "Selected clients and partners of Fansipan Group."
     }
   }
 }

@@ -62,11 +62,11 @@ export function CatalogueSection({ locale, site }: { locale: Locale; site: SiteD
               />
               <div className="relative aspect-[3/4] overflow-hidden bg-white shadow-[0_40px_90px_-30px_rgba(0,0,0,0.6)] transition-transform duration-500 hover:-translate-y-1.5 hover:rotate-[-1deg]">
                 <Image
-                  src="/images/hero-fansipan.jpg"
+                  src="/images/about/plant.jpg"
                   alt=""
                   fill
                   sizes="(min-width: 1024px) 360px, 70vw"
-                  className="object-cover object-[68%_center]"
+                  className="object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,26,53,0.15)_0%,rgba(7,26,53,0.25)_45%,rgba(7,26,53,0.92)_100%)]" />
                 <div className="absolute inset-x-0 top-0 flex items-center justify-between p-5">
@@ -95,7 +95,7 @@ export function CatalogueSection({ locale, site }: { locale: Locale; site: SiteD
           </div>
 
           <div className="lg:col-span-7">
-            <SectionHeading index="05" eyebrow={c.eyebrow} title={c.title} intro={c.intro} light />
+            <SectionHeading index="05" eyebrow={c.eyebrow} title={c.title} intro={c.intro} light stacked />
             <p className="mt-6 font-mono text-[0.66rem] uppercase tracking-[0.16em] text-white/45">
               {c.contents}
             </p>

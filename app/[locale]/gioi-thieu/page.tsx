@@ -171,11 +171,11 @@ export default async function AboutPage({
             <div className="overflow-hidden border border-line bg-navy text-white">
               <div className="relative h-32">
                 <Image
-                  src="/images/hero-fansipan.jpg"
+                  src="/images/about/plant.jpg"
                   alt=""
                   fill
                   sizes="(min-width: 1024px) 420px, 100vw"
-                  className="object-cover object-[70%_center]"
+                  className="object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,26,53,0.3),rgba(7,26,53,0.95))]" />
                 <Image
@@ -210,6 +210,68 @@ export default async function AboutPage({
                   <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="wrap mt-12 lg:mt-16">
+          <div className="grid gap-4 sm:grid-cols-[1.25fr_1fr]">
+            <figure className="relative min-h-[240px] overflow-hidden border border-line bg-sky sm:min-h-[320px] lg:min-h-[380px]">
+              <Image
+                src="/images/about/plant.jpg"
+                alt={
+                  locale === "vi"
+                    ? "Hệ thống công nghiệp tại nhà máy"
+                    : "Industrial systems at a plant"
+                }
+                fill
+                sizes="(min-width: 1024px) 55vw, 100vw"
+                className="object-cover"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(7,26,53,0.78)_100%)]" />
+              <figcaption className="absolute bottom-4 left-5 right-5 font-mono text-[0.58rem] uppercase tracking-[0.18em] text-white/80">
+                {locale === "vi"
+                  ? "Nhà máy & công trình công nghiệp"
+                  : "Factories & industrial facilities"}
+              </figcaption>
+            </figure>
+
+            <div className="grid grid-rows-2 gap-4">
+              <figure className="relative min-h-[150px] overflow-hidden border border-line bg-sky">
+                <Image
+                  src="/images/about/systems.jpg"
+                  alt={
+                    locale === "vi"
+                      ? "Tủ điện và hệ thống cơ điện"
+                      : "Electrical panels and M&E systems"
+                  }
+                  fill
+                  sizes="(min-width: 1024px) 35vw, 100vw"
+                  className="object-cover"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(7,26,53,0.78)_100%)]" />
+                <figcaption className="absolute bottom-4 left-5 right-5 font-mono text-[0.58rem] uppercase tracking-[0.18em] text-white/80">
+                  {locale === "vi" ? "Hệ thống cơ điện" : "M&E systems"}
+                </figcaption>
+              </figure>
+
+              <figure className="relative min-h-[150px] overflow-hidden border border-line bg-sky">
+                <Image
+                  src="/images/about/team.jpg"
+                  alt={
+                    locale === "vi"
+                      ? "Kỹ thuật viên đang kiểm tra thiết bị"
+                      : "Technicians inspecting equipment"
+                  }
+                  fill
+                  sizes="(min-width: 1024px) 35vw, 100vw"
+                  className="object-cover"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(7,26,53,0.78)_100%)]" />
+                <figcaption className="absolute bottom-4 left-5 right-5 font-mono text-[0.58rem] uppercase tracking-[0.18em] text-white/80">
+                  {locale === "vi" ? "Đội ngũ kỹ thuật" : "Engineering team"}
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>

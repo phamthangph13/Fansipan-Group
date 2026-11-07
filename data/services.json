@@ -156,7 +156,8 @@
     "note": {
       "vi": "Phạm vi công việc cụ thể được xác định theo hồ sơ thiết kế, yêu cầu kỹ thuật và thỏa thuận của từng dự án.",
       "en": "The specific scope of work is defined by the design documents, technical requirements and agreement of each project."
-    }
+    },
+    "image": "/images/services/hvac.jpg"
   },
   {
     "id": "me",
@@ -339,7 +340,8 @@
     "note": {
       "vi": "Phạm vi triển khai cụ thể được xác định theo hồ sơ thiết kế, yêu cầu kỹ thuật và thỏa thuận của từng dự án.",
       "en": "The specific scope of work is defined by the design documents, technical requirements and agreement of each project."
-    }
+    },
+    "image": "/images/services/me.jpg"
   },
   {
     "id": "cooling",
@@ -498,7 +500,8 @@
     "note": {
       "vi": "Phạm vi thiết bị và công việc được xác định theo hồ sơ kỹ thuật và yêu cầu cụ thể của từng dự án.",
       "en": "The equipment and work scope are defined by the technical documents and specific requirements of each project."
-    }
+    },
+    "image": "/images/services/cooling.jpg"
   },
   {
     "id": "maintenance",
@@ -609,6 +612,7 @@
     "note": {
       "vi": "Lịch bảo trì và phạm vi công việc được xây dựng theo tình trạng thiết bị và nhu cầu vận hành của từng công trình.",
       "en": "Maintenance schedules and scope are built around equipment condition and the operating needs of each facility."
-    }
+    },
+    "image": "/images/services/maintenance.jpg"
   }
 ]

@@ -131,7 +131,8 @@ export function Flipbook({
   const [showThumbs, setShowThumbs] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [zoomPage, setZoomPage] = useState<number | null>(null);
-  const [zoom, setZoom] = useState(1.15);
+  const [zoom, setZoom] = useState(1);
+  const [lightboxZoom, setLightboxZoom] = useState(1);
   const [attempt, setAttempt] = useState(0);
 
   useEffect(() => {
@@ -394,7 +395,7 @@ export function Flipbook({
         </div>
       ) : null}
 
-      <div className="relative flex flex-1 flex-col items-center justify-center px-2 py-4 sm:px-6 sm:py-6">
+      <div className="relative flex flex-1 flex-col items-center justify-center overflow-x-clip px-2 py-4 sm:px-6 sm:py-6">
         {status === "loading" ? (
           <div className="w-full max-w-[860px]">
             <div className="mx-auto flex aspect-[1.42/1] w-full max-w-[720px] items-center justify-center border border-line bg-white/70">
@@ -527,7 +528,7 @@ export function Flipbook({
             type="button"
             onClick={() => {
               setZoomPage(current);
-              setZoom(1.15);
+              setLightboxZoom(1);
             }}
             disabled={status !== "ready"}
             className="hidden font-mono text-[0.6rem] uppercase tracking-[0.12em] text-brand transition-colors hover:text-accent disabled:opacity-40 sm:inline"
@@ -566,17 +567,17 @@ export function Flipbook({
             <div className="flex items-center gap-1.5">
               <ToolButton
                 label={c.zoomOut}
-                onClick={() => setZoom((value) => Math.max(0.7, Number((value - 0.2).toFixed(2))))}
+                onClick={() => setLightboxZoom((value) => Math.max(0.7, Number((value - 0.2).toFixed(2))))}
                 className="border-white/20 bg-white/10 text-white hover:border-white/50 hover:text-white"
               >
                 <ZoomOut className="size-4" />
               </ToolButton>
               <span className="w-10 text-center font-mono text-[0.6rem] text-white/70">
-                {Math.round(zoom * 100)}%
+                {Math.round(lightboxZoom * 100)}%
               </span>
               <ToolButton
                 label={c.zoomIn}
-                onClick={() => setZoom((value) => Math.min(3, Number((value + 0.2).toFixed(2))))}
+                onClick={() => setLightboxZoom((value) => Math.min(3, Number((value + 0.2).toFixed(2))))}
                 className="border-white/20 bg-white/10 text-white hover:border-white/50 hover:text-white"
               >
                 <ZoomIn className="size-4" />
@@ -598,7 +599,7 @@ export function Flipbook({
                 src={pages[zoomPage]}
                 alt={`${title} — ${c.page} ${zoomPage + 1}`}
                 className="mx-auto block shadow-[0_40px_120px_-30px_rgba(0,0,0,0.7)]"
-                style={{ width: `${Math.round(zoom * 100)}%`, maxWidth: "none" }}
+                style={{ width: `${Math.round(lightboxZoom * 100)}%`, maxWidth: "none" }}
               />
             </div>
           </div>

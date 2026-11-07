@@ -14,7 +14,7 @@ export function HeroParallax({ children }: { children: ReactNode }) {
     const update = () => {
       frame = 0;
       const offset = Math.min(window.scrollY, 700);
-      node.style.transform = `translate3d(0, ${offset * 0.1}px, 0) scale(1.06)`;
+      node.style.transform = `translate3d(0, ${offset * 0.1}px, 0)`;
     };
     const onScroll = () => {
       if (frame) return;

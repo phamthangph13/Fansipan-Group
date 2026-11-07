@@ -11,13 +11,13 @@ const copy = {
     all: "Tất cả",
     results: "dự án",
     note:
-      "Thông tin dự án được công bố ở mức cơ bản. Logo, hình ảnh và tài liệu chi tiết chỉ hiển thị khi được khách hàng xác nhận.",
+      "Thông tin dự án được công bố ở mức cơ bản. Hình ảnh kèm theo là ảnh minh họa cho hạng mục công việc, không phải ảnh công trình thực tế.",
   },
   en: {
     all: "All",
     results: "projects",
     note:
-      "Project information is published at a basic level. Logos, images and detailed documents are shown only after client confirmation.",
+      "Project information is published at a basic level. Images illustrate the type of work and are not photographs of the actual facilities.",
   },
 } as const;
 

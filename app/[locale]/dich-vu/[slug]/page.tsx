@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, ArrowUpRight, Check, Phone } from "lucide-react";
@@ -131,9 +132,28 @@ export default async function ServiceDetailPage({
       <section className="bg-white py-14 lg:py-20">
         <div className="wrap grid gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-5">
-            <div className="border border-line bg-[#f5f9fe] px-6 pb-6 pt-8">
-              <ServiceArt variant={service.id as ServiceArtVariant} />
-            </div>
+            {service.image ? (
+              <div className="group relative aspect-[4/3] overflow-hidden border border-line bg-sky">
+                <Image
+                  src={service.image}
+                  alt={service.title[locale]}
+                  fill
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(7,26,53,0.4)_0%,rgba(7,26,53,0.02)_42%,rgba(7,26,53,0.72)_100%)]" />
+                <span className="absolute left-4 top-4 bg-white/95 px-2.5 py-1 font-mono text-[0.64rem] tracking-[0.18em] text-brand">
+                  {service.code}
+                </span>
+                <span className="absolute bottom-4 left-4 right-4 font-mono text-[0.58rem] uppercase tracking-[0.14em] text-white/85">
+                  {service.tagline[locale]}
+                </span>
+              </div>
+            ) : (
+              <div className="border border-line bg-[#f5f9fe] px-6 pb-6 pt-8">
+                <ServiceArt variant={service.id as ServiceArtVariant} />
+              </div>
+            )}
             <div className="mt-5 border border-line bg-white p-6">
               <p className="font-mono text-[0.6rem] uppercase tracking-[0.16em] text-muted/60">
                 {c.related}

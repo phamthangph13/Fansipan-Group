@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { defaultLocale, locales } from "@/lib/i18n";
 
 const PUBLIC_FILE =
-  /\.(?:png|jpe?g|gif|svg|webp|avif|ico|pdf|txt|xml|json|webmanifest|woff2?|ttf|otf|mp4|webm)$/i;
+  /\.(?:png|jpe?g|gif|svg|webp|avif|ico|pdf|html?|txt|xml|json|webmanifest|mjs|woff2?|ttf|otf|mp4|webm)$/i;
 
 export default function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -11,7 +11,8 @@ export default function proxy(request: NextRequest) {
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
     pathname.startsWith("/admin") ||
-    PUBLIC_FILE.test(pathname)
+    PUBLIC_FILE.test(pathname) ||
+    pathname.startsWith("/pdf/")
   ) {
     return NextResponse.next();
   }

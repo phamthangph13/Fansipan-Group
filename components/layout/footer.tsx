@@ -156,6 +156,13 @@ export function Footer({ locale, site }: { locale: Locale; site: SiteData }) {
             )}
           </div>
           <div className="flex flex-wrap items-center gap-5">
+            <a
+              href="/image-credits.html"
+              className="transition-colors hover:text-white/70"
+            >
+              {locale === "vi" ? "Nguồn ảnh" : "Image credits"}
+            </a>
+            <span className="hidden h-3 w-px bg-white/15 sm:block" />
             <Link
               href={`/${locale}${paths.privacy}`}
               className="transition-colors hover:text-white/70"

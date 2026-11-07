@@ -6,7 +6,7 @@ import { PageHero } from "@/components/layout/page-hero";
 import { ProjectsExplorer } from "@/components/projects/projects-explorer";
 import { ClientsStrip } from "@/components/clients/clients-strip";
 import { getProjects, getServices, getSite } from "@/lib/content";
-import { isLocale, paths, type Locale } from "@/lib/i18n";
+import { isLocale, paths, ui, type Locale } from "@/lib/i18n";
 import { buildMetadata } from "@/lib/seo";
 
 const copy = {
@@ -87,7 +87,7 @@ export default async function ProjectsPage({
         title={c.title}
         intro={c.intro}
         breadcrumb={[
-          { label: "Trang chủ", href: `/${locale}` },
+          { label: ui[locale].nav.home, href: `/${locale}` },
           { label: c.eyebrow },
         ]}
       >

@@ -9,6 +9,7 @@ export function SectionHeading({
   action,
   light = false,
   align = "left",
+  stacked = false,
   className,
 }: {
   index?: string;
@@ -18,6 +19,7 @@ export function SectionHeading({
   action?: ReactNode;
   light?: boolean;
   align?: "left" | "center";
+  stacked?: boolean;
   className?: string;
 }) {
   return (
@@ -38,14 +40,15 @@ export function SectionHeading({
       <div
         className={cn(
           "mt-5 gap-x-12 gap-y-5",
-          intro ? "lg:grid lg:grid-cols-12 lg:items-end" : "",
+          intro && !stacked ? "space-y-4 lg:grid lg:grid-cols-12 lg:items-end lg:space-y-0" : "",
+          stacked && intro ? "space-y-4" : "",
           align === "center" && "text-center",
         )}
       >
         <h2
           className={cn(
             "display-2",
-            intro ? "lg:col-span-7" : "max-w-3xl",
+            intro && !stacked ? "lg:col-span-7" : "max-w-3xl",
             light ? "text-white" : "text-ink",
             align === "center" && "mx-auto max-w-3xl",
           )}
@@ -55,7 +58,7 @@ export function SectionHeading({
         {intro ? (
           <div
             className={cn(
-              "lg:col-span-5",
+              !stacked && "lg:col-span-5",
               align === "center" && "mx-auto max-w-2xl",
             )}
           >

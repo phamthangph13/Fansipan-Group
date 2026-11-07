@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
@@ -110,10 +111,20 @@ export default async function NewsPage({
               className="group mt-5 grid overflow-hidden border border-line bg-white transition-all duration-300 hover:border-brand/35 hover:shadow-[0_30px_70px_-40px_rgba(7,24,44,0.35)] lg:grid-cols-2"
             >
               <div className="relative min-h-[240px] overflow-hidden border-b border-line bg-sky lg:min-h-[340px] lg:border-b-0 lg:border-r">
-                <ArticleArt
-                  category={featured.category}
-                  className="absolute inset-0 h-full w-full transition-transform duration-500 group-hover:scale-[1.02]"
-                />
+                {featured.image ? (
+                  <Image
+                    src={featured.image}
+                    alt={featured.title[locale]}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                  />
+                ) : (
+                  <ArticleArt
+                    category={featured.category}
+                    className="absolute inset-0 h-full w-full transition-transform duration-500 group-hover:scale-[1.02]"
+                  />
+                )}
                 <span className="absolute left-5 top-5 border border-brand/15 bg-white/95 px-2.5 py-1 font-mono text-[0.58rem] uppercase tracking-[0.13em] text-brand">
                   {categoryLabel(featured.category, locale)}
                 </span>

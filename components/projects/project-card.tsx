@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CalendarDays, CheckCircle2, Layers, MapPin } from "lucide-react";
 import type { Locale } from "@/lib/i18n";
 import { projectStatusLabels } from "@/lib/labels";
@@ -18,21 +19,53 @@ export function ProjectCard({
   index: number;
 }) {
   const l = labels[locale];
+  const name = locale === "vi" ? project.name : project.nameEn;
+  const status = projectStatusLabels[project.status][locale];
 
   return (
     <article className="group relative flex flex-col border border-line bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand/35 hover:shadow-[0_22px_50px_-32px_rgba(7,24,44,0.4)]">
-      <div className="flex items-center justify-between">
-        <span className="font-mono text-[0.64rem] tracking-[0.16em] text-muted/45">
-          {String(index + 1).padStart(2, "0")}
-        </span>
-        <span className="inline-flex items-center gap-1.5 border border-green/20 bg-green/[0.06] px-2 py-1 text-[0.63rem] font-medium text-green">
-          <CheckCircle2 className="size-3" strokeWidth={2} />
-          {projectStatusLabels[project.status][locale]}
-        </span>
-      </div>
+      {project.image ? (
+        <div className="relative -mx-6 -mt-6 mb-5 aspect-[16/10] overflow-hidden border-b border-line bg-sky">
+          <Image
+            src={project.image}
+            alt={
+              locale === "vi"
+                ? `Hình ảnh minh họa cho ${project.name}`
+                : `Illustrative image for ${project.nameEn}`
+            }
+            fill
+            sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          />
+          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(7,26,53,0.4)_0%,rgba(7,26,53,0.02)_40%,rgba(7,26,53,0.72)_100%)]" />
+          <div className="absolute inset-x-4 top-4 flex items-center justify-between gap-3">
+            <span className="bg-white/95 px-2 py-0.5 font-mono text-[0.62rem] tracking-[0.16em] text-brand">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <span className="inline-flex items-center gap-1.5 border border-green/15 bg-white/95 px-2 py-1 text-[0.63rem] font-medium text-green backdrop-blur">
+              <CheckCircle2 className="size-3" strokeWidth={2} />
+              {status}
+            </span>
+          </div>
+          <span className="absolute bottom-3.5 left-4 inline-flex items-center gap-1.5 font-mono text-[0.58rem] uppercase tracking-[0.14em] text-white/80">
+            <MapPin className="size-3" strokeWidth={1.6} />
+            {project.location[locale]}
+          </span>
+        </div>
+      ) : (
+        <div className="flex items-center justify-between">
+          <span className="font-mono text-[0.64rem] tracking-[0.16em] text-muted/45">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+          <span className="inline-flex items-center gap-1.5 border border-green/20 bg-green/[0.06] px-2 py-1 text-[0.63rem] font-medium text-green">
+            <CheckCircle2 className="size-3" strokeWidth={2} />
+            {status}
+          </span>
+        </div>
+      )}
 
       <h3 className="mt-4 text-[1rem] font-semibold leading-snug tracking-[-0.01em] text-ink">
-        {locale === "vi" ? project.name : project.nameEn}
+        {name}
       </h3>
 
       <dl className="mt-4 space-y-3 border-t border-line pt-4 text-[0.78rem]">

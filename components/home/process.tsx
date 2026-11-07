@@ -31,7 +31,7 @@ export function ProcessSection({ locale, site }: { locale: Locale; site: SiteDat
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
             <div className="lg:sticky lg:top-32">
-              <SectionHeading index="03" eyebrow={c.eyebrow} title={c.title} intro={c.intro} />
+              <SectionHeading index="03" eyebrow={c.eyebrow} title={c.title} intro={c.intro} stacked />
               <blockquote className="mt-8 border-l-2 border-accent pl-5">
                 <p className="font-serif text-[1.25rem] italic leading-snug text-ink">
                   “{site.processIntro[locale]}”
