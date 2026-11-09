@@ -11,16 +11,12 @@ const copy = {
   vi: {
     eyebrow: "Lĩnh vực hoạt động",
     title: "Bốn lĩnh vực, một chuẩn kỹ thuật.",
-    intro:
-      "Từ hệ thống điều hòa – làm lạnh, cơ điện đến tháp giải nhiệt và bảo trì: mỗi hạng mục được triển khai theo cùng một cách — khảo sát kỹ, thi công chuẩn, bàn giao rõ ràng.",
     all: "Tất cả dịch vụ",
     detail: "Xem chi tiết",
   },
   en: {
     eyebrow: "What we do",
     title: "Four disciplines, one engineering standard.",
-    intro:
-      "From HVAC and M&E to cooling towers and maintenance, every work item follows the same discipline — thorough survey, controlled installation and a clear handover.",
     all: "All services",
     detail: "View details",
   },
@@ -37,14 +33,13 @@ export function ServicesSection({
   const t = ui[locale];
 
   return (
-    <section id="dich-vu" className="relative overflow-hidden bg-sky py-20 lg:py-28">
+    <section id="dich-vu" className="relative overflow-hidden bg-sky py-14 lg:py-20">
       <div className="pointer-events-none absolute inset-0 grid-lines opacity-40" aria-hidden />
       <div className="wrap relative">
         <SectionHeading
           index="02"
           eyebrow={c.eyebrow}
           title={c.title}
-          intro={c.intro}
           action={
             <Link href={`/${locale}${paths.services}`} className="link-arrow">
               {c.all}
@@ -93,10 +88,7 @@ export function ServicesSection({
                 )}
                 <div className="flex flex-1 flex-col p-6">
                   <div className="flex-1">
-                    <p className="font-mono text-[0.62rem] uppercase leading-relaxed tracking-[0.14em] text-muted/80">
-                      {service.tagline[locale]}
-                    </p>
-                    <h3 className="mt-3 text-[1.02rem] font-semibold leading-snug text-ink">
+                    <h3 className="text-[1.02rem] font-semibold leading-snug text-ink">
                       {service.title[locale]}
                     </h3>
                     <p className="mt-3 text-[0.8rem] leading-[1.7] text-muted">

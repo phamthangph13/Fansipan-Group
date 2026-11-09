@@ -53,7 +53,7 @@ function shell(title: string, rows: [string, string][], body?: string) {
   return `
   <div style="background:#f4f7fb;padding:28px;font-family:Arial,Helvetica,sans-serif;">
     <div style="max-width:640px;margin:0 auto;background:#fff;border:1px solid #e1e8f1;">
-      <div style="background:#071a35;padding:22px 26px;">
+      <div style="background:#1b365d;padding:22px 26px;">
         <div style="color:#fff;font-size:16px;font-weight:bold;letter-spacing:.06em;">FANSIPAN GROUP.,JSC</div>
         <div style="color:#8fb0de;font-size:11px;letter-spacing:.18em;margin-top:5px;text-transform:uppercase;">M&amp;E · HVAC · INDUSTRIAL SERVICES</div>
       </div>
@@ -63,7 +63,7 @@ function shell(title: string, rows: [string, string][], body?: string) {
         <table style="width:100%;border-collapse:collapse;">${table}</table>
         ${
           body
-            ? `<div style="margin-top:22px;padding:16px 18px;background:#f7fafd;border-left:3px solid #0027aa;color:#25384d;font-size:14px;line-height:1.7;white-space:pre-wrap;">${escapeHtml(
+            ? `<div style="margin-top:22px;padding:16px 18px;background:#f7fafd;border-left:3px solid #005a9c;color:#25384d;font-size:14px;line-height:1.7;white-space:pre-wrap;">${escapeHtml(
                 body,
               )}</div>`
             : ""

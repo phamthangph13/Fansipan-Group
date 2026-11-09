@@ -5,23 +5,25 @@
   --font-mono: var(--font-plex), ui-monospace, SFMono-Regular, Menlo, monospace;
   --font-serif: var(--font-lora), Georgia, "Times New Roman", serif;
 
-  --color-brand: #0027aa;
-  --color-brand-600: #0030c8;
-  --color-brand-700: #001f86;
-  --color-brand-050: #eef3ff;
-  --color-brand-100: #dfe8ff;
+  --color-brand: #005a9c;
+  --color-brand-600: #006bb8;
+  --color-brand-700: #00477b;
+  --color-brand-050: #edf6fc;
+  --color-brand-100: #d9ecf8;
 
   --color-ink: #07182c;
   --color-ink-soft: #25384d;
   --color-muted: #596a7f;
-  --color-navy: #071a35;
-  --color-navy-2: #0a2346;
-  --color-navy-3: #102d55;
+  --color-navy: #1b365d;
+  --color-navy-2: #214472;
+  --color-navy-3: #2a527f;
 
-  --color-sky: #eef4fc;
-  --color-sky-2: #e1ebf9;
-  --color-cloud: #f7fafd;
-  --color-line: #dce5f0;
+  --color-sky: #eff8fc;
+  --color-sky-2: #e0f2f9;
+  --color-cloud: #f7fbfd;
+  --color-ice: #a0e0ef;
+  --color-cyan: #60c1e5;
+  --color-line: #dbe7ef;
   --color-line-dark: rgba(255, 255, 255, 0.14);
 
   --color-accent: #db0114;
@@ -311,7 +313,7 @@
 
 .card-lift:hover {
   transform: translateY(-2px);
-  border-color: rgba(0, 39, 170, 0.35);
+  border-color: rgba(0, 90, 156, 0.35);
   box-shadow: var(--shadow-lift);
 }
 
@@ -477,7 +479,7 @@
 .textarea:focus {
   outline: none;
   border-color: var(--color-brand);
-  box-shadow: 0 0 0 3px rgba(0, 39, 170, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 90, 156, 0.12);
 }
 
 .input[aria-invalid="true"],
@@ -527,6 +529,15 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .marquee {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .marquee::-webkit-scrollbar {
+    display: none;
+  }
+
   .marquee-track {
     animation: none;
   }

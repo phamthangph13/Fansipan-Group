@@ -1,21 +1,25 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ProjectCard } from "@/components/projects/project-card";
-import { ui, type Locale } from "@/lib/i18n";
+import { paths, ui, type Locale } from "@/lib/i18n";
 import type { Project, Service, ServiceId } from "@/lib/types";
 
 const copy = {
   vi: {
     all: "Tất cả",
     results: "dự án",
+    more: "Xem thêm",
     note:
       "Thông tin dự án được công bố ở mức cơ bản. Hình ảnh kèm theo là ảnh minh họa cho hạng mục công việc, không phải ảnh công trình thực tế.",
   },
   en: {
     all: "All",
     results: "projects",
+    more: "View more",
     note:
       "Project information is published at a basic level. Images illustrate the type of work and are not photographs of the actual facilities.",
   },
@@ -26,11 +30,15 @@ export function ProjectsExplorer({
   projects,
   services,
   initialCategory = "all",
+  limit,
+  showNote = true,
 }: {
   locale: Locale;
   projects: Project[];
   services: Service[];
   initialCategory?: string;
+  limit?: number;
+  showNote?: boolean;
 }) {
   const validInitial = ["all", ...services.map((service) => service.id)].includes(initialCategory)
     ? initialCategory
@@ -45,6 +53,10 @@ export function ProjectsExplorer({
         : projects.filter((project) => project.categories.includes(active as ServiceId)),
     [active, projects],
   );
+  const visible = limit ? filtered.slice(0, limit) : filtered;
+  const moreHref = `/${locale}${paths.projects}${
+    active === "all" ? "" : `?category=${active}`
+  }`;
 
   return (
     <div>
@@ -110,7 +122,7 @@ export function ProjectsExplorer({
 
       {filtered.length ? (
         <div className="mt-7 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {filtered.map((project, index) => (
+          {visible.map((project, index) => (
             <ProjectCard key={project.id} project={project} locale={locale} index={index} />
           ))}
         </div>
@@ -120,7 +132,18 @@ export function ProjectsExplorer({
         </p>
       )}
 
-      <p className="mt-6 max-w-3xl text-[0.72rem] leading-relaxed text-muted/70">{c.note}</p>
+      {limit ? (
+        <div className="mt-8 flex justify-center">
+          <Link href={moreHref} className="btn btn-outline btn-sm">
+            {c.more}
+            <ArrowRight className="size-3.5" />
+          </Link>
+        </div>
+      ) : null}
+
+      {showNote ? (
+        <p className="mt-6 max-w-3xl text-[0.72rem] leading-relaxed text-muted/70">{c.note}</p>
+      ) : null}
     </div>
   );
 }

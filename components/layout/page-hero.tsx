@@ -9,6 +9,7 @@ export function PageHero({
   eyebrow,
   title,
   intro,
+  introClassName,
   breadcrumb,
   children,
   tone = "light",
@@ -17,6 +18,7 @@ export function PageHero({
   eyebrow: string;
   title: ReactNode;
   intro?: string;
+  introClassName?: string;
   breadcrumb: { label: string; href?: string }[];
   children?: ReactNode;
   tone?: "light" | "dark";
@@ -28,7 +30,7 @@ export function PageHero({
       className={cn(
         "relative overflow-hidden border-b",
         dark
-          ? "border-white/10 bg-[linear-gradient(115deg,#071a35,#0a2a5e_60%,#0027aa)] text-white"
+          ? "border-white/10 bg-[linear-gradient(115deg,#1b365d,#124a78_60%,#005a9c)] text-white"
           : "border-line bg-[linear-gradient(180deg,#f8fbff,#eef5fd)]",
       )}
     >
@@ -51,12 +53,12 @@ export function PageHero({
       >
         <path
           d="M0 380L120 300L230 340L360 210L470 300L590 150L700 260L810 120L900 220"
-          stroke={dark ? "white" : "#0027AA"}
+          stroke={dark ? "white" : "#005A9C"}
           strokeWidth="1.2"
         />
         <path
           d="M0 400L150 340L300 370L470 260L610 330L740 210L900 300"
-          stroke={dark ? "white" : "#0027AA"}
+          stroke={dark ? "white" : "#005A9C"}
           strokeWidth="0.8"
         />
       </svg>
@@ -113,6 +115,7 @@ export function PageHero({
             className={cn(
               "lead mt-5 max-w-2xl",
               dark ? "text-white/65" : "text-ink-soft",
+              introClassName,
             )}
           >
             {intro}

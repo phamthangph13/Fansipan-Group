@@ -20,7 +20,7 @@ export function StatsBand({ locale, site }: { locale: Locale; site: SiteData }) 
   const c = copy[locale];
 
   return (
-    <section className="relative overflow-hidden bg-navy text-white">
+    <section className="relative overflow-hidden bg-[linear-gradient(110deg,#1b365d_0%,#005a9c_100%)] text-white">
       <div className="pointer-events-none absolute inset-0 grid-lines-light opacity-60" aria-hidden />
       <svg
         className="pointer-events-none absolute -right-10 bottom-0 h-[120%] w-[55%] opacity-[0.12]"

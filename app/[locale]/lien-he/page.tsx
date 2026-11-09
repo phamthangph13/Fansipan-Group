@@ -157,10 +157,7 @@ export default async function ContactPage({
         <div className="wrap grid gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-5">
             <p className="eyebrow text-brand">{c.contactTitle}</p>
-            <h2 className="display-3 mt-3 text-ink">
-              {locale === "vi" ? "Gọi, nhắn hoặc gửi yêu cầu." : "Call, message or send a request."}
-            </h2>
-            <div className="mt-6 space-y-3">
+            <div className="mt-5 space-y-3">
               <ContactCard
                 icon={<Phone className="size-4" strokeWidth={1.7} />}
                 label={c.hotline}
@@ -233,12 +230,14 @@ export default async function ContactPage({
 
       <section className="border-t border-line bg-cloud py-12 lg:py-16">
         <div className="wrap">
-          <div className="max-w-2xl">
+          <div>
             <p className="eyebrow text-brand">{c.offices}</p>
             <h2 className="display-3 mt-3 text-ink">
               {locale === "vi" ? "Hai địa điểm, một đầu mối." : "Two locations, one point of contact."}
             </h2>
-            <p className="mt-4 text-[0.88rem] leading-relaxed text-muted">{c.officesIntro}</p>
+            <p className="mt-4 text-[0.88rem] leading-relaxed text-muted xl:whitespace-nowrap">
+              {c.officesIntro}
+            </p>
           </div>
           <div className="mt-8">
             <OfficeMaps locale={locale} site={site} mode="grid" />

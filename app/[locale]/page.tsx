@@ -66,7 +66,7 @@ export default async function HomePage({
       case "hero":
         return <Hero key={id} locale={locale} site={site} />;
       case "about":
-        return <AboutSection key={id} locale={locale} site={site} services={services} />;
+        return <AboutSection key={id} locale={locale} />;
       case "stats":
         return <StatsBand key={id} locale={locale} site={site} />;
       case "services":

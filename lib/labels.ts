@@ -6,6 +6,7 @@ export const articleCategoryLabels: Record<ArticleCategory, Localized> = {
   "dich-vu": { vi: "Dịch vụ", en: "Services" },
   "kien-thuc": { vi: "Kiến thức", en: "Knowledge" },
   "tin-tuc": { vi: "Tin tức", en: "News" },
+  "hoat-dong-noi-bo": { vi: "Hoạt động nội bộ", en: "Internal activities" },
 };
 
 export const articleCategories = Object.keys(articleCategoryLabels) as ArticleCategory[];

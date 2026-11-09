@@ -27,7 +27,7 @@ export function CareersTeaser({ locale, jobs }: { locale: Locale; jobs: Job[] })
   const openJobs = jobs.filter((job) => job.open);
 
   return (
-    <section id="tuyen-dung" className="relative overflow-hidden bg-ink py-16 text-white lg:py-20">
+    <section id="tuyen-dung" className="relative overflow-hidden bg-ink py-12 text-white lg:py-16">
       <div className="pointer-events-none absolute inset-0 grid-lines-light opacity-40" aria-hidden />
       <div className="pointer-events-none absolute -right-20 top-1/2 h-[340px] w-[340px] -translate-y-1/2 rounded-full border border-white/[0.07]" aria-hidden />
       <div className="wrap relative grid items-center gap-10 lg:grid-cols-12">

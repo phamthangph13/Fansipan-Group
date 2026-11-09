@@ -43,7 +43,7 @@ export function ContactSection({
   return (
     <section
       id="lien-he"
-      className="relative overflow-hidden bg-[linear-gradient(180deg,#f7fafd_0%,#eef4fc_100%)] py-20 lg:py-28"
+      className="relative overflow-hidden bg-[linear-gradient(180deg,#f7fafd_0%,#eef4fc_100%)] py-14 lg:py-20"
     >
       <div className="pointer-events-none absolute inset-0 grid-lines opacity-40" aria-hidden />
       <div className="wrap relative">

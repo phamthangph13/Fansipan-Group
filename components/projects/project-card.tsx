@@ -5,8 +5,18 @@ import { projectStatusLabels } from "@/lib/labels";
 import type { Project } from "@/lib/types";
 
 const labels = {
-  vi: { scope: "Hạng mục thực hiện", location: "Địa điểm", year: "Năm thực hiện" },
-  en: { scope: "Scope of work", location: "Location", year: "Year" },
+  vi: {
+    scope: "Hạng mục thực hiện",
+    location: "Địa điểm",
+    year: "Năm thực hiện",
+    updating: "Đang cập nhật",
+  },
+  en: {
+    scope: "Scope of work",
+    location: "Location",
+    year: "Year",
+    updating: "Updating",
+  },
 } as const;
 
 export function ProjectCard({
@@ -83,15 +93,15 @@ export function ProjectCard({
             <dd className="leading-relaxed text-muted">{project.location[locale]}</dd>
           </div>
         </div>
-        {project.year ? (
-          <div className="flex gap-3">
-            <CalendarDays className="mt-0.5 size-3.5 shrink-0 text-brand/70" strokeWidth={1.6} />
-            <div>
-              <dt className="sr-only">{l.year}</dt>
-              <dd className="num text-muted">{project.year}</dd>
-            </div>
+        <div className="flex gap-3">
+          <CalendarDays className="mt-0.5 size-3.5 shrink-0 text-brand/70" strokeWidth={1.6} />
+          <div>
+            <dt className="font-mono text-[0.58rem] uppercase leading-none tracking-[0.14em] text-muted/65">
+              {l.year}
+            </dt>
+            <dd className="num mt-1 text-muted">{project.year ?? l.updating}</dd>
           </div>
-        ) : null}
+        </div>
       </dl>
 
       <span className="mt-auto block pt-5">

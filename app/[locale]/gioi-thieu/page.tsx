@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -11,6 +10,7 @@ import {
   ShieldCheck,
   Users,
 } from "lucide-react";
+import { Logo } from "@/components/brand/logo";
 import { PageHero } from "@/components/layout/page-hero";
 import { ServiceArt, type ServiceArtVariant } from "@/components/illustrations/service-art";
 import { StatsBand } from "@/components/home/stats";
@@ -28,6 +28,8 @@ const copy = {
     intro:
       "Fansipan Group – Chuyên gia Cơ điện (M&E), HVAC, tháp giải nhiệt và bảo trì hệ thống.",
     overview: "Tổng quan công ty",
+    overviewTitle:
+      "Chuyên gia Cơ điện (M&E) – Hệ thống điều hòa không khí & Làm lạnh (HVAC) – Tháp giải nhiệt & Thiết bị công nghiệp – Dịch vụ bảo trì chuyên nghiệp",
     difference: "Điểm khác biệt",
     vision: "Tầm nhìn",
     mission: "Sứ mệnh",
@@ -41,7 +43,11 @@ const copy = {
       "Gửi thông tin công trình hoặc liên hệ hotline để đội ngũ kỹ thuật trao đổi trước khi khảo sát.",
     cta: "Liên hệ đội ngũ kỹ thuật",
     services: "Xem dịch vụ",
-    legal: "Tên pháp lý",
+    legal: "Hồ sơ pháp lý",
+    taxCode: "Mã số thuế",
+    address: "Địa chỉ",
+    email: "Email",
+    hotline: "Hotline",
     profile: "Hồ sơ năng lực",
     differences: [
       {
@@ -68,6 +74,8 @@ const copy = {
     intro:
       "Fansipan Group – specialists in M&E, HVAC, cooling towers and system maintenance.",
     overview: "Company overview",
+    overviewTitle:
+      "M&E specialists – HVAC systems – Cooling towers & industrial equipment – Professional maintenance services",
     difference: "What sets us apart",
     vision: "Vision",
     mission: "Mission",
@@ -81,7 +89,11 @@ const copy = {
       "Send your project information or call our hotline. Our engineering team will discuss the requirement before any survey.",
     cta: "Contact our engineering team",
     services: "View services",
-    legal: "Legal name",
+    legal: "Legal profile",
+    taxCode: "Tax code",
+    address: "Address",
+    email: "Email",
+    hotline: "Hotline",
     profile: "Company profile",
     differences: [
       {
@@ -144,67 +156,94 @@ export default async function AboutPage({
         eyebrow={c.eyebrow}
         title={c.title}
         intro={c.intro}
+        introClassName="lg:max-w-none lg:whitespace-nowrap lg:text-[0.92rem]"
         breadcrumb={[
           { label: t.nav.home, href: `/${locale}` },
           { label: t.nav.about },
         ]}
       />
 
-      <section className="bg-white py-16 lg:py-24">
-        <div className="wrap grid gap-12 lg:grid-cols-12 lg:gap-16">
+      <section className="bg-white py-14 lg:py-20">
+        <div className="wrap grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-7">
             <div className="flex items-center gap-3">
               <span className="h-px w-7 bg-accent" aria-hidden />
               <p className="eyebrow text-brand">{c.overview}</p>
             </div>
-            <p className="display-3 mt-5 max-w-2xl text-ink">{paragraphs[0]}</p>
+            <h2 className="mt-5 max-w-[34ch] text-[clamp(1.5rem,2.6vw,2.15rem)] font-semibold leading-[1.22] tracking-[-0.025em] text-ink">
+              {c.overviewTitle}
+            </h2>
             <div className="mt-7 space-y-5 border-t border-line pt-7">
-              {paragraphs.slice(1).map((paragraph) => (
-                <p key={paragraph.slice(0, 32)} className="text-[0.96rem] leading-[1.85] text-ink-soft">
-                  {paragraph}
-                </p>
-              ))}
+              {paragraphs.map((paragraph, index) => {
+                const last = index === paragraphs.length - 1;
+                return (
+                  <p
+                    key={paragraph.slice(0, 32)}
+                    className={
+                      last
+                        ? "border-l-2 border-accent pl-4 text-[1.02rem] font-semibold leading-relaxed text-ink"
+                        : "text-[0.96rem] leading-[1.85] text-ink-soft"
+                    }
+                  >
+                    {paragraph}
+                  </p>
+                );
+              })}
             </div>
           </div>
 
           <div className="lg:col-span-5">
-            <div className="overflow-hidden border border-line bg-navy text-white">
-              <div className="relative h-32">
-                <Image
-                  src="/images/about/plant.jpg"
-                  alt=""
-                  fill
-                  sizes="(min-width: 1024px) 420px, 100vw"
-                  className="object-cover object-center"
-                />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,26,53,0.3),rgba(7,26,53,0.95))]" />
-                <Image
-                  src="/brand/mark-white.png"
-                  alt=""
-                  width={44}
-                  height={44}
-                  className="absolute bottom-5 left-6"
-                />
-              </div>
-              <div className="p-6">
-                <p className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-white/40">
-                  {c.legal}
-                </p>
-                <p className="mt-2 text-[1rem] font-semibold text-white">
+            <div className="overflow-hidden border border-line bg-cloud">
+              <div className="h-1 bg-[linear-gradient(90deg,var(--color-brand),var(--color-cyan),var(--color-accent))]" />
+              <div className="p-6 sm:p-7">
+                <div className="rounded-sm bg-white p-5">
+                  <Logo size="md" />
+                </div>
+
+                <p className="eyebrow mt-7 text-brand">{c.legal}</p>
+                <p className="mt-2 text-[1.05rem] font-semibold leading-snug text-ink">
                   {site.company.legalName[locale]}
                 </p>
-                <p className="mt-1 text-[0.82rem] text-white/55">{site.company.displayName}</p>
-                <div className="mt-5 h-px bg-white/10" />
-                <p className="mt-5 font-serif text-[1.15rem] italic text-white/80">
-                  “{site.company.slogan[locale]}”
-                </p>
-                <div className="mt-6 flex flex-col gap-2 text-[0.74rem] text-white/50">
-                  <p>{site.contact.email}</p>
-                  <p className="num">{site.contact.hotlineDisplay}</p>
-                </div>
+                <p className="mt-1 text-[0.8rem] text-muted">{site.company.displayName}</p>
+
+                <dl className="mt-6 space-y-4 border-t border-line pt-5">
+                  <div>
+                    <dt className="font-mono text-[0.58rem] uppercase tracking-[0.16em] text-muted/65">
+                      {c.taxCode}
+                    </dt>
+                    <dd className="num mt-1 text-[0.95rem] font-semibold text-ink">
+                      {site.company.taxCode || t.labels.updating}
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="font-mono text-[0.58rem] uppercase tracking-[0.16em] text-muted/65">
+                      {c.address}
+                    </dt>
+                    <dd className="mt-1 text-[0.82rem] leading-relaxed text-ink-soft">
+                      {site.offices[0]?.address[locale]}
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="font-mono text-[0.58rem] uppercase tracking-[0.16em] text-muted/65">
+                      {c.email}
+                    </dt>
+                    <dd className="mt-1 text-[0.82rem] text-ink-soft">
+                      <a href={`mailto:${site.contact.email}`} className="break-all hover:text-brand">
+                        {site.contact.email}
+                      </a>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="font-mono text-[0.58rem] uppercase tracking-[0.16em] text-muted/65">
+                      {c.hotline}
+                    </dt>
+                    <dd className="num mt-1 text-[0.82rem] text-ink-soft">{site.contact.hotlineDisplay}</dd>
+                  </div>
+                </dl>
+
                 <Link
                   href={`/${locale}${paths.profile}`}
-                  className="group mt-6 inline-flex items-center gap-1.5 border-t border-white/10 pt-4 text-[0.78rem] font-semibold text-white"
+                  className="group mt-6 inline-flex items-center gap-1.5 border-t border-line pt-4 text-[0.82rem] font-semibold text-brand"
                 >
                   {c.profile}
                   <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
@@ -213,71 +252,9 @@ export default async function AboutPage({
             </div>
           </div>
         </div>
-
-        <div className="wrap mt-12 lg:mt-16">
-          <div className="grid gap-4 sm:grid-cols-[1.25fr_1fr]">
-            <figure className="relative min-h-[240px] overflow-hidden border border-line bg-sky sm:min-h-[320px] lg:min-h-[380px]">
-              <Image
-                src="/images/about/plant.jpg"
-                alt={
-                  locale === "vi"
-                    ? "Hệ thống công nghiệp tại nhà máy"
-                    : "Industrial systems at a plant"
-                }
-                fill
-                sizes="(min-width: 1024px) 55vw, 100vw"
-                className="object-cover"
-              />
-              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(7,26,53,0.78)_100%)]" />
-              <figcaption className="absolute bottom-4 left-5 right-5 font-mono text-[0.58rem] uppercase tracking-[0.18em] text-white/80">
-                {locale === "vi"
-                  ? "Nhà máy & công trình công nghiệp"
-                  : "Factories & industrial facilities"}
-              </figcaption>
-            </figure>
-
-            <div className="grid grid-rows-2 gap-4">
-              <figure className="relative min-h-[150px] overflow-hidden border border-line bg-sky">
-                <Image
-                  src="/images/about/systems.jpg"
-                  alt={
-                    locale === "vi"
-                      ? "Tủ điện và hệ thống cơ điện"
-                      : "Electrical panels and M&E systems"
-                  }
-                  fill
-                  sizes="(min-width: 1024px) 35vw, 100vw"
-                  className="object-cover"
-                />
-                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(7,26,53,0.78)_100%)]" />
-                <figcaption className="absolute bottom-4 left-5 right-5 font-mono text-[0.58rem] uppercase tracking-[0.18em] text-white/80">
-                  {locale === "vi" ? "Hệ thống cơ điện" : "M&E systems"}
-                </figcaption>
-              </figure>
-
-              <figure className="relative min-h-[150px] overflow-hidden border border-line bg-sky">
-                <Image
-                  src="/images/about/team.jpg"
-                  alt={
-                    locale === "vi"
-                      ? "Kỹ thuật viên đang kiểm tra thiết bị"
-                      : "Technicians inspecting equipment"
-                  }
-                  fill
-                  sizes="(min-width: 1024px) 35vw, 100vw"
-                  className="object-cover"
-                />
-                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(7,26,53,0.78)_100%)]" />
-                <figcaption className="absolute bottom-4 left-5 right-5 font-mono text-[0.58rem] uppercase tracking-[0.18em] text-white/80">
-                  {locale === "vi" ? "Đội ngũ kỹ thuật" : "Engineering team"}
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
       </section>
 
-      <section className="border-y border-line bg-cloud py-16 lg:py-24">
+      <section className="border-y border-line bg-cloud py-14 lg:py-20">
         <div className="wrap">
           <div className="grid gap-10 lg:grid-cols-12">
             <div className="lg:col-span-4">
@@ -306,15 +283,20 @@ export default async function AboutPage({
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-navy py-16 text-white lg:py-24">
+      <section className="relative overflow-hidden bg-navy py-14 text-white lg:py-20">
         <div className="pointer-events-none absolute inset-0 grid-lines-light opacity-40" aria-hidden />
         <div className="wrap relative grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
-            <div className="flex items-center gap-3">
-              <span className="h-px w-7 bg-accent" aria-hidden />
-              <p className="eyebrow text-white/55">{c.vision}</p>
+            <div className="flex items-start justify-between gap-4 border-t border-white/10 pt-5">
+              <div className="flex items-center gap-3">
+                <span className="h-px w-7 bg-accent" aria-hidden />
+                <p className="eyebrow text-white/60">{c.vision}</p>
+              </div>
+              <span className="font-mono text-[2.4rem] leading-none tracking-[-0.04em] text-white/20">
+                01
+              </span>
             </div>
-            <div className="mt-6 space-y-5 border-t border-white/10 pt-6">
+            <div className="mt-6 space-y-5">
               {site.about.vision.map((item) => (
                 <p key={item[locale]} className="text-[0.96rem] leading-[1.8] text-white/70">
                   {item[locale]}
@@ -323,11 +305,16 @@ export default async function AboutPage({
             </div>
           </div>
           <div>
-            <div className="flex items-center gap-3">
-              <span className="h-px w-7 bg-accent" aria-hidden />
-              <p className="eyebrow text-white/55">{c.mission}</p>
+            <div className="flex items-start justify-between gap-4 border-t border-white/10 pt-5">
+              <div className="flex items-center gap-3">
+                <span className="h-px w-7 bg-accent" aria-hidden />
+                <p className="eyebrow text-white/60">{c.mission}</p>
+              </div>
+              <span className="font-mono text-[2.4rem] leading-none tracking-[-0.04em] text-white/20">
+                02
+              </span>
             </div>
-            <div className="mt-6 space-y-5 border-t border-white/10 pt-6">
+            <div className="mt-6 space-y-5">
               {site.about.mission.map((item) => (
                 <p key={item[locale]} className="text-[0.96rem] leading-[1.8] text-white/70">
                   {item[locale]}
@@ -338,7 +325,7 @@ export default async function AboutPage({
         </div>
       </section>
 
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-white py-14 lg:py-20">
         <div className="wrap">
           <SectionHeading eyebrow={c.values} title={
             locale === "vi"
@@ -366,7 +353,7 @@ export default async function AboutPage({
         </div>
       </section>
 
-      <section className="border-y border-line bg-cloud py-16 lg:py-24">
+      <section className="border-y border-line bg-cloud py-14 lg:py-20">
         <div className="wrap">
           <SectionHeading
             eyebrow={c.capability}

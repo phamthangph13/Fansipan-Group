@@ -32,7 +32,7 @@ export function CatalogueSection({ locale, site }: { locale: Locale; site: SiteD
   const c = copy[locale];
 
   return (
-    <section id="ho-so-nang-luc" className="relative overflow-hidden bg-[linear-gradient(115deg,#071a35_0%,#0a2a5e_55%,#0027aa_100%)] py-20 text-white lg:py-28">
+    <section id="ho-so-nang-luc" className="relative overflow-hidden bg-[linear-gradient(115deg,#1b365d_0%,#124a78_55%,#005a9c_100%)] py-14 text-white lg:py-20">
       <div className="pointer-events-none absolute inset-0 grid-lines-light opacity-40" aria-hidden />
       <svg
         className="pointer-events-none absolute -bottom-20 right-0 h-[460px] w-[60%] opacity-15"

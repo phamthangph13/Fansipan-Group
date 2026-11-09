@@ -69,7 +69,13 @@ function numberOrNull(formData: FormData, key: string) {
 
 const serviceIds: ServiceId[] = ["hvac", "me", "cooling", "maintenance"];
 const projectStatuses: ProjectStatus[] = ["completed", "in_progress", "planned"];
-const articleCategories: ArticleCategory[] = ["du-an", "dich-vu", "kien-thuc", "tin-tuc"];
+const articleCategories: ArticleCategory[] = [
+  "du-an",
+  "dich-vu",
+  "kien-thuc",
+  "tin-tuc",
+  "hoat-dong-noi-bo",
+];
 
 function refreshPublic() {
   revalidatePath("/", "layout");

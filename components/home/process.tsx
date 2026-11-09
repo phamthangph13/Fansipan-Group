@@ -26,7 +26,7 @@ export function ProcessSection({ locale, site }: { locale: Locale; site: SiteDat
   const t = ui[locale];
 
   return (
-    <section id="quy-trinh" className="relative overflow-hidden bg-white py-20 lg:py-28">
+    <section id="quy-trinh" className="relative overflow-hidden bg-white py-14 lg:py-20">
       <div className="wrap">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">

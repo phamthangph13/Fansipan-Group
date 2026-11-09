@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, Compass, GraduationCap, HardHat, Layers, Mail } from "lucide-react";
@@ -146,59 +145,7 @@ export default async function CareersPage({
         </div>
       </PageHero>
 
-      <section className="border-b border-line bg-white py-8 lg:py-10">
-        <div className="wrap grid grid-cols-2 gap-3 sm:grid-cols-3">
-          {[
-            {
-              src: "/images/careers/technicians.jpg",
-              alt:
-                locale === "vi"
-                  ? "Kỹ thuật viên HVAC đang kiểm tra thiết bị"
-                  : "HVAC technicians checking equipment",
-              label: locale === "vi" ? "Kỹ thuật viên HVAC" : "HVAC technicians",
-            },
-            {
-              src: "/images/careers/panel.jpg",
-              alt:
-                locale === "vi"
-                  ? "Kỹ sư vận hành tủ điều khiển"
-                  : "Engineer operating a control panel",
-              label: locale === "vi" ? "Kỹ sư vận hành" : "Operations engineers",
-            },
-            {
-              src: "/images/about/cooling.jpg",
-              alt:
-                locale === "vi"
-                  ? "Hệ thống tháp giải nhiệt tại công trình công nghiệp (ảnh minh họa)"
-                  : "Cooling tower system at an industrial facility (illustrative image)",
-              label: locale === "vi" ? "Hệ thống công nghiệp" : "Industrial systems",
-            },
-          ].map((photo, index) => (
-            <figure
-              key={photo.src}
-              className={
-                index === 0
-                  ? "relative col-span-2 aspect-[16/9] overflow-hidden border border-line bg-sky sm:col-span-1 sm:aspect-[4/3]"
-                  : "relative aspect-[4/3] overflow-hidden border border-line bg-sky"
-              }
-            >
-              <Image
-                src={photo.src}
-                alt={photo.alt}
-                fill
-                sizes="(min-width: 640px) 33vw, 50vw"
-                className="object-cover"
-              />
-              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(7,26,53,0.8)_100%)]" />
-              <figcaption className="absolute bottom-3 left-4 right-4 font-mono text-[0.56rem] uppercase tracking-[0.16em] text-white/80">
-                {photo.label}
-              </figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
-
-      <section className="border-b border-line bg-cloud py-12 lg:py-16">
+      <section className="border-b border-line bg-cloud py-10 lg:py-14">
         <div className="wrap">
           <div className="grid gap-8 lg:grid-cols-12">
             <div className="lg:col-span-4">
@@ -227,7 +174,7 @@ export default async function CareersPage({
         </div>
       </section>
 
-      <section className="bg-white py-12 lg:py-16">
+      <section className="bg-white py-10 lg:py-14">
         <div className="wrap">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>

@@ -45,6 +45,25 @@ export function FloatingContact({ site, locale }: { site: SiteData; locale: Loca
         </span>
       </a>
 
+      {site.social.facebook ? (
+        <a
+          href={site.social.facebook}
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label={locale === "vi" ? "Theo dõi Fansipan Group trên Facebook" : "Follow Fansipan Group on Facebook"}
+          className="group flex h-12 items-center gap-0 overflow-hidden rounded-full bg-[#1877f2] pl-3.5 pr-3.5 text-white shadow-[0_12px_30px_-12px_rgba(24,119,242,0.75)] transition-all duration-300 hover:gap-2 hover:pr-4"
+        >
+          <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-white/15">
+            <svg viewBox="0 0 24 24" className="size-4" fill="currentColor" aria-hidden>
+              <path d="M13.5 21v-7.5h2.52l.38-2.93H13.5V8.7c0-.85.24-1.43 1.45-1.43h1.55V4.65c-.27-.04-1.19-.12-2.26-.12-2.24 0-3.77 1.37-3.77 3.88v2.16H8v2.93h2.47V21h3.03z" />
+            </svg>
+          </span>
+          <span className="max-w-0 overflow-hidden whitespace-nowrap text-[0.8rem] font-semibold opacity-0 transition-all duration-300 group-hover:max-w-[8rem] group-hover:opacity-100">
+            Facebook
+          </span>
+        </a>
+      ) : null}
+
       <a
         href={`tel:${site.contact.hotline}`}
         aria-label={locale === "vi" ? "Gọi điện 0913 339 190" : "Call 0913 339 190"}

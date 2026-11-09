@@ -94,8 +94,8 @@ export default async function ServiceDetailPage({
   const others = services.filter((item) => item.id !== service.id);
 
   const sections = [
-    { id: "vai-tro", label: c.role },
     { id: "pham-vi", label: c.scope },
+    { id: "vai-tro", label: c.role },
     { id: "doi-tuong", label: c.audiences },
     ...(related.length ? [{ id: "du-an", label: c.projects }] : []),
     { id: "quy-trinh", label: c.process },
@@ -166,21 +166,26 @@ export default async function ServiceDetailPage({
             </div>
           </div>
 
-          <div id="vai-tro" className="scroll-mt-28 lg:col-span-7">
-            <p className="eyebrow text-brand">{c.role}</p>
-            <h2 className="display-3 mt-3 text-ink">
-              {locale === "vi" ? "Giá trị trong vận hành." : "Value in operation."}
-            </h2>
-            <ul className="mt-6 space-y-4 border-t border-line pt-6">
-              {service.role.map((item, index) => (
-                <li key={item[locale]} className="flex gap-4">
-                  <span className="mt-0.5 font-mono text-[0.64rem] tracking-[0.12em] text-accent">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <p className="text-[0.9rem] leading-[1.75] text-ink-soft">{item[locale]}</p>
-                </li>
+          <div id="pham-vi" className="scroll-mt-28 lg:col-span-7">
+            <p className="eyebrow text-brand">{c.scope}</p>
+            <div className="mt-5 space-y-8">
+              {service.scope.map((group) => (
+                <div key={group.title[locale]}>
+                  <h3 className="text-[1.05rem] font-semibold text-ink">{group.title[locale]}</h3>
+                  <ul className="mt-3 grid gap-2.5 border-t border-line pt-4 sm:grid-cols-2">
+                    {group.items.map((item) => (
+                      <li
+                        key={item[locale]}
+                        className="flex gap-2.5 text-[0.84rem] leading-relaxed text-ink-soft"
+                      >
+                        <Check className="mt-0.5 size-3.5 shrink-0 text-accent" strokeWidth={2.2} />
+                        <span>{item[locale]}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -218,26 +223,21 @@ export default async function ServiceDetailPage({
           </aside>
 
           <div className="lg:col-span-9">
-            <div id="pham-vi" className="scroll-mt-28">
-              <p className="eyebrow text-brand">{c.scope}</p>
-              <div className="mt-5 space-y-8">
-                {service.scope.map((group) => (
-                  <div key={group.title[locale]}>
-                    <h3 className="text-[1.05rem] font-semibold text-ink">{group.title[locale]}</h3>
-                    <ul className="mt-3 grid gap-2.5 border-t border-line pt-4 sm:grid-cols-2">
-                      {group.items.map((item) => (
-                        <li
-                          key={item[locale]}
-                          className="flex gap-2.5 text-[0.84rem] leading-relaxed text-ink-soft"
-                        >
-                          <Check className="mt-0.5 size-3.5 shrink-0 text-accent" strokeWidth={2.2} />
-                          <span>{item[locale]}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+            <div id="vai-tro" className="scroll-mt-28">
+              <p className="eyebrow text-brand">{c.role}</p>
+              <h2 className="display-3 mt-3 text-ink">
+                {locale === "vi" ? "Giá trị trong vận hành." : "Value in operation."}
+              </h2>
+              <ul className="mt-6 space-y-4 border-t border-line pt-6">
+                {service.role.map((item, index) => (
+                  <li key={item[locale]} className="flex gap-4">
+                    <span className="mt-0.5 font-mono text-[0.64rem] tracking-[0.12em] text-accent">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <p className="text-[0.9rem] leading-[1.75] text-ink-soft">{item[locale]}</p>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
 
             <div id="doi-tuong" className="mt-14 scroll-mt-28">

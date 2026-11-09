@@ -12,7 +12,7 @@ export default async function LoginPage() {
 
   return (
     <main className="grid min-h-screen bg-white lg:grid-cols-[1.05fr_1fr]">
-      <section className="relative hidden overflow-hidden bg-[linear-gradient(135deg,#071a35_0%,#0a2a5e_55%,#0027aa_100%)] p-12 text-white lg:flex lg:flex-col lg:justify-between">
+      <section className="relative hidden overflow-hidden bg-[linear-gradient(135deg,#1b365d_0%,#124a78_55%,#005a9c_100%)] p-12 text-white lg:flex lg:flex-col lg:justify-between">
         <div className="pointer-events-none absolute inset-0 grid-lines-light opacity-40" aria-hidden />
         <svg
           className="pointer-events-none absolute bottom-0 right-0 h-[55%] w-[85%] opacity-20"

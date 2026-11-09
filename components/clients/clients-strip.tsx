@@ -6,46 +6,63 @@ import type { SiteData } from "@/lib/types";
 const copy = {
   vi: {
     heading: "Khách hàng và đối tác",
-    intro:
-      "Danh mục khách hàng và đối tác trải rộng từ hàng không, điện tử, cơ khí đến thép, giấy, khách sạn và nhiệt điện.",
   },
   en: {
     heading: "Clients & partners",
-    intro:
-      "Our clients and partners span aviation, electronics, machinery, steel, paper, hospitality and power generation.",
   },
 } as const;
 
-function LogoGrid({
+function LogoGroup({
   logos,
-  compact = false,
+  compact,
+  hidden = false,
 }: {
   logos: SiteData["clients"]["logos"];
-  compact?: boolean;
+  compact: boolean;
+  hidden?: boolean;
 }) {
   return (
-    <div className="grid grid-cols-2 gap-px overflow-hidden border border-line bg-line sm:grid-cols-3 lg:grid-cols-6">
+    <div className="flex shrink-0 items-center" aria-hidden={hidden || undefined}>
       {logos.map((logo) => (
         <div
           key={logo.name}
           className={cn(
-            "flex items-center justify-center bg-white px-4 transition-colors hover:bg-cloud",
-            compact ? "h-[72px]" : "h-24 sm:h-28",
+            "mr-3 flex shrink-0 items-center justify-center border border-line bg-white px-5 transition-colors hover:bg-cloud",
+            compact ? "h-[68px] w-[160px] sm:w-[180px]" : "h-24 w-[172px] sm:h-28 sm:w-[214px]",
           )}
         >
           <Image
             src={logo.src}
-            alt={logo.name}
+            alt={hidden ? "" : logo.name}
             width={240}
             height={80}
-            sizes="(min-width: 1024px) 200px, 33vw"
+            sizes="220px"
             className={cn(
-              "w-auto max-w-[84%] object-contain",
-              compact ? "max-h-9" : "max-h-11 sm:max-h-14",
+              "w-auto max-w-[86%] object-contain",
+              compact ? "max-h-8" : "max-h-10 sm:max-h-14",
             )}
           />
         </div>
       ))}
+    </div>
+  );
+}
+
+function LogoMarquee({
+  logos,
+  compact = false,
+  className,
+}: {
+  logos: SiteData["clients"]["logos"];
+  compact?: boolean;
+  className?: string;
+}) {
+  return (
+    <div className={cn("marquee mask-fade-x overflow-hidden", className)}>
+      <div className="marquee-track flex w-max items-center">
+        <LogoGroup logos={logos} compact={compact} />
+        <LogoGroup logos={logos} compact={compact} hidden />
+      </div>
     </div>
   );
 }
@@ -123,7 +140,7 @@ export function ClientsStrip({
 
   if (compact) {
     return (
-      <section className="border-t border-line bg-white py-10">
+      <section className="border-t border-line bg-white py-9">
         <div className="wrap">
           <div className="flex items-center justify-center gap-3">
             <span className="h-px w-8 bg-line" aria-hidden />
@@ -132,30 +149,23 @@ export function ClientsStrip({
             </h2>
             <span className="h-px w-8 bg-line" aria-hidden />
           </div>
-          <div className="mt-6">
-            <LogoGrid logos={site.clients.logos} compact />
-          </div>
+          <LogoMarquee logos={site.clients.logos} compact className="mt-6" />
         </div>
       </section>
     );
   }
 
   return (
-    <section id="khach-hang" className="border-y border-line bg-white py-16 lg:py-20">
+    <section id="khach-hang" className="border-y border-line bg-white py-12 lg:py-16">
       <div className="wrap">
         <div className="text-center">
           <h2 className="text-[1.05rem] font-extrabold uppercase tracking-[0.14em] text-brand sm:text-[1.3rem]">
             {c.heading}
           </h2>
           <span className="mx-auto mt-3 block h-[3px] w-16 bg-brand" aria-hidden />
-          <p className="mx-auto mt-5 max-w-2xl text-[0.86rem] leading-relaxed text-muted">
-            {c.intro}
-          </p>
         </div>
 
-        <div className="mt-10">
-          <LogoGrid logos={site.clients.logos} />
-        </div>
+        <LogoMarquee logos={site.clients.logos} className="mt-9" />
 
         <p className="mt-5 text-center font-mono text-[0.62rem] uppercase tracking-[0.14em] text-muted/45">
           {site.clients.note[locale]}

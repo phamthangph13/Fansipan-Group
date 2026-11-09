@@ -10,15 +10,11 @@ const copy = {
   vi: {
     eyebrow: "Tin tức & kiến thức",
     title: "Góc nhìn từ công trường và phòng kỹ thuật.",
-    intro:
-      "Kinh nghiệm triển khai, kiến thức vận hành và những ghi nhận từ các dự án công nghiệp.",
     all: "Xem tất cả tin tức",
   },
   en: {
     eyebrow: "News & insights",
     title: "Perspectives from site and engineering.",
-    intro:
-      "Delivery experience, operational knowledge and notes from industrial projects.",
     all: "View all news",
   },
 } as const;
@@ -27,13 +23,12 @@ export function NewsSection({ locale, articles }: { locale: Locale; articles: Ar
   const c = copy[locale];
 
   return (
-    <section id="tin-tuc" className="bg-white py-20 lg:py-28">
+    <section id="tin-tuc" className="bg-white py-14 lg:py-20">
       <div className="wrap">
         <SectionHeading
           index="06"
           eyebrow={c.eyebrow}
           title={c.title}
-          intro={c.intro}
           action={
             <Link href={`/${locale}${paths.news}`} className="link-arrow">
               {c.all}

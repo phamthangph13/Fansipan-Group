@@ -14,7 +14,7 @@ export default async function AdminPanelLayout({
 
   return (
     <div className="min-h-screen bg-cloud">
-      <aside className="fixed inset-y-0 left-0 z-40 hidden w-60 flex-col bg-[linear-gradient(180deg,#071a35,#0a2346)] lg:flex">
+      <aside className="fixed inset-y-0 left-0 z-40 hidden w-60 flex-col bg-[linear-gradient(180deg,#1b365d,#0a2346)] lg:flex">
         <Link href="/admin" className="flex items-center gap-3 border-b border-white/10 px-5 py-5">
           <Image src="/brand/mark-white.png" alt="" width={34} height={34} />
           <span>

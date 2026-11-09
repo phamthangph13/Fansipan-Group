@@ -138,7 +138,12 @@ export interface Project {
   clientLogo: string | null;
 }
 
-export type ArticleCategory = "du-an" | "dich-vu" | "kien-thuc" | "tin-tuc";
+export type ArticleCategory =
+  | "du-an"
+  | "dich-vu"
+  | "kien-thuc"
+  | "tin-tuc"
+  | "hoat-dong-noi-bo";
 
 export interface Article {
   slug: string;
